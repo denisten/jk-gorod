@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./index.module.css";
-import { IFlatsData } from "../../apartments";
 import { ELang } from "../../types";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { Text } from "../Text";
 import { content } from "../../content";
+import { IFlatsData } from "../../apartments";
 
 interface IProps {
   flats: IFlatsData[];

@@ -1,6 +1,3 @@
-import room1 from "./images/roomSelectorBlock/1-1.png";
-import room1Full from "./images/roomSelectorBlock/1-1-full.png";
-import room2 from "./images/roomSelectorBlock/1-2.png";
 import m_3_1 from "./images/flatsImages/M_3_1.webp";
 import m_2_2 from "./images/flatsImages/M_2_2.webp";
 import m_1_3 from "./images/flatsImages/M_1_3.webp";
@@ -12,15 +9,15 @@ import l_2_8 from "./images/flatsImages/L_2_8.webp";
 import l_1_9 from "./images/flatsImages/L_1_9.webp";
 import l_3_10 from "./images/flatsImages/L_3_10.webp";
 import l_1_11 from "./images/flatsImages/L_1_11.webp";
-import l_3_12 from "./images/flatsImages/l_3_12.webp";
-import l_3_13 from "./images/flatsImages/l_3_13.webp";
-import l_2_14 from "./images/flatsImages/l_2_14.webp";
-import l_1_15 from "./images/flatsImages/l_1_15.webp";
-import k_3_16 from "./images/flatsImages/k_3_16.webp";
-import k_2_17 from "./images/flatsImages/k_2_17.webp";
-import k_3_18 from "./images/flatsImages/k_3_18.webp";
-import k_2_19 from "./images/flatsImages/k_2_19.webp";
-import k_2_20 from "./images/flatsImages/k_2_20.webp";
+import l_3_12 from "./images/flatsImages/L_3_12.webp";
+import l_3_13 from "./images/flatsImages/L_3_13.webp";
+import l_2_14 from "./images/flatsImages/L_2_14.webp";
+import l_1_15 from "./images/flatsImages/L_1_15.webp";
+import k_3_16 from "./images/flatsImages/K_3_16.webp";
+import k_2_17 from "./images/flatsImages/K_2_17.webp";
+import k_3_18 from "./images/flatsImages/K_3_18.webp";
+import k_2_19 from "./images/flatsImages/K_2_19.webp";
+import k_2_20 from "./images/flatsImages/K_2_20.webp";
 import { StaticImageData } from "next/image";
 
 export type TExtraInfo = { title: string; value: number };
@@ -364,92 +361,3 @@ export const flatsData: { [key: string]: IFlatsData[] } = {
     },
   ],
 };
-
-export const apartmentsInfo: IApartmentInfo[] = [
-  {
-    id: "1",
-    block: "М",
-    roomCount: 4,
-    info: {
-      square: 45,
-      price: 872,
-      extraInfo: [
-        { title: "bedroom", value: 19.6 },
-        { title: "kitchen", value: 19.6 },
-        { title: "toilet", value: 12 },
-        { title: "hall", value: 12 },
-        { title: "balcony", value: 10 },
-      ],
-    },
-    schemasImg: { id: "4", img: room2, fullImg: room1Full },
-  },
-
-  {
-    id: "12",
-    block: "Блок М",
-    roomCount: 4,
-    info: {
-      square: 45,
-      price: 872,
-      extraInfo: [
-        { title: "bedroom", value: 19.6 },
-        { title: "kitchen", value: 19.6 },
-        { title: "toilet", value: 12 },
-        { title: "hall", value: 12 },
-        { title: "balcony", value: 10 },
-      ],
-    },
-    schemasImg: { id: "4", img: room2, fullImg: room1Full },
-  },
-  {
-    id: "3",
-    block: "Блок М",
-    roomCount: 1,
-    info: {
-      square: 45,
-      price: 872,
-      extraInfo: [
-        { title: "bedroom", value: 19.6 },
-        { title: "kitchen", value: 19.6 },
-        { title: "toilet", value: 12 },
-        { title: "hall", value: 12 },
-        { title: "balcony", value: 10 },
-      ],
-    },
-    schemasImg: { id: "4", img: room2, fullImg: room1Full },
-  },
-  {
-    id: "5",
-    block: "Блок М",
-    roomCount: 2,
-    info: {
-      square: 45,
-      price: 872,
-      extraInfo: [
-        { title: "bedroom", value: 19.6 },
-        { title: "kitchen", value: 19.6 },
-        { title: "toilet", value: 12 },
-        { title: "hall", value: 12 },
-        { title: "balcony", value: 10 },
-      ],
-    },
-    schemasImg: { id: "4", img: room2, fullImg: room1Full },
-  },
-  {
-    id: "2",
-    block: "Блок М",
-    roomCount: 3,
-    info: {
-      square: 45,
-      price: 872,
-      extraInfo: [
-        { title: "bedroom", value: 19.6 },
-        { title: "kitchen", value: 19.6 },
-        { title: "toilet", value: 12 },
-        { title: "hall", value: 12 },
-        { title: "balcony", value: 10 },
-      ],
-    },
-    schemasImg: { id: "1", img: room1, fullImg: room1Full },
-  },
-];
