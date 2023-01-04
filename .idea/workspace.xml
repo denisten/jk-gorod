@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="037ed2cf-7e67-4730-9fda-675831e5ef80" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/blocks/ChessBlockMobile/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/ChessBlockMobile/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FlatsSlider/FlatsSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FlatsSlider/FlatsSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MobileFlatsSlider/MobileFlatsSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileFlatsSlider/MobileFlatsSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MobileFlatsSlider/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileFlatsSlider/index.module.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HlmrQj4dxIPvcIAHndC8eMtdVt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/denisten/workspace/jk-gorod-landing/components/MobileSlideShow",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/Users/denisten/workspace/jk-gorod-landing/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/denisten/workspace/jk-gorod-landing/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/MobileSlideShow" />
+      <recent name="$PROJECT_DIR$/images/welcomeBlock" />
+      <recent name="$PROJECT_DIR$/components/Header" />
+      <recent name="$PROJECT_DIR$/images/locationBlock" />
+      <recent name="$PROJECT_DIR$/blocks/LocationInfoBlock" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blocks/WelcomeBlock" />
+      <recent name="$PROJECT_DIR$/blocks/welcomeBlockMobileBackground" />
+      <recent name="$PROJECT_DIR$/blocks/AboutBlock" />
+      <recent name="$PROJECT_DIR$/blocks" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="037ed2cf-7e67-4730-9fda-675831e5ef80" name="Changes" comment="" />
+      <created>1668868242631</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668868242631</updated>
+      <workItem from="1668868244832" duration="82380000" />
+      <workItem from="1669724319653" duration="24165000" />
+      <workItem from="1670505586189" duration="7595000" />
+      <workItem from="1670622196576" duration="68125000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/blocks/Interactive3DBlockMobile/Interactive3DBlockMobile.tsx</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

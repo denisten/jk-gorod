@@ -1,1 +1,0 @@
-export { ExtraInfoMobile } from "./ExtraInfoMobile";

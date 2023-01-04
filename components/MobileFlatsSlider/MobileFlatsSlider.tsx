@@ -40,11 +40,9 @@ export const MobileFlatsSlider: React.FC<IProps> = ({ flats, lang }) => {
         // onSlideChange={(e) => setImgId(e.activeIndex)}
       >
         {flats.map((flat) => (
-          <SwiperSlide className={styles.slide}>
+          <SwiperSlide className={styles.slide} key={flat.id}>
             <Image src={flat.img} alt="img" className={styles.img} />
             <div className={styles.description}>
-              {/*<div className={styles.right} />*/}
-
               <Text
                 text={`${flat.roomCount.toString()}-${
                   localContent.flatsSlider.flatsCount
@@ -68,7 +66,7 @@ export const MobileFlatsSlider: React.FC<IProps> = ({ flats, lang }) => {
               </div>
               <ol className={styles.flatOl}>
                 {flat.rooms.map((room) => (
-                  <li>
+                  <li key={room.title}>
                     <div className={styles.row}>
                       <Text
                         //@ts-ignore

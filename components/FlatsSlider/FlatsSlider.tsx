@@ -42,7 +42,7 @@ export const FlatsSlider: React.FC<IProps> = ({ flats, lang }) => {
         // onSlideChange={(e) => setImgId(e.activeIndex)}
       >
         {flats.map((flat) => (
-          <SwiperSlide className={styles.swiperSlide}>
+          <SwiperSlide className={styles.swiperSlide} key={flat.id}>
             <div className={styles.roomSizes}>
               <Text
                 text={`${flat.roomCount.toString()}-${
@@ -66,7 +66,7 @@ export const FlatsSlider: React.FC<IProps> = ({ flats, lang }) => {
               </div>
               <ol className={styles.flatOl}>
                 {flat.rooms.map((room) => (
-                  <li>
+                  <li key={room.title}>
                     <div className={styles.row}>
                       <Text
                         //@ts-ignore
