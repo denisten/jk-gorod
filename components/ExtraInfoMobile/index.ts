@@ -1,0 +1,1 @@
+export { ExtraInfoMobile } from "./ExtraInfoMobile";

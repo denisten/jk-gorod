@@ -1,0 +1,54 @@
+.container {
+}
+
+.img {
+    height: auto;
+    width: 100vw;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.description {
+    background: #1D4A4F;
+    padding: 20px 3rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title {
+    font-family: Austin;
+    text-align: center;
+    color: #B28353;
+}
+
+.text {
+    font-family: Gilroy;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.flatOl {
+    color: #ffffff;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+/*.right {*/
+/*    width: 80px;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    background: #B28353;*/
+/*}*/

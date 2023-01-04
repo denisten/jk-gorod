@@ -1,0 +1,47 @@
+.container {
+    padding: 5rem 0 0 0;
+}
+
+.title {
+    font-family: Austin;
+    /*font-weight: 700;*/
+    /*font-size: 64px;*/
+    text-align: center;
+    color: #B28353;
+    margin-bottom: 5rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 600px;
+}
+
+.swiper-slide {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+@media (max-width: 650px) {
+    .container {
+        margin-bottom: 40px;
+    }
+
+    .swiper {
+        height: 247px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+}

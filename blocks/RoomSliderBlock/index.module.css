@@ -1,0 +1,79 @@
+.container {
+    padding: 5rem 0 100px 0;
+    position: relative;
+}
+
+.title {
+    font-family: Austin;
+    text-align: center;
+    color: #B28353;
+    margin-bottom: 3rem;
+}
+
+.text {
+    font-family: Gilroy;
+    font-weight: 300;
+    /*font-size: 40px;*/
+    text-align: center;
+    color: #B28353;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 120px;
+}
+
+.select {
+    font-size: 1.5rem;
+    font-family: Austin;
+}
+
+.flatSizeContainer {
+    display: flex;
+    align-items: center;
+}
+
+.flatSize {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Gilroy;
+    font-weight: 300;
+    margin-right: 2rem;
+    color: #000000;
+}
+
+.flatSizeNumber {
+    font-family: Gilroy;
+    font-size: 1.75rem;
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+
+.selected {
+    color: #B28353;
+}
+
+@media (max-width: 650px) {
+    .row {
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+
+    .flatSizeNumber {
+        font-size: 1rem;
+    }
+
+    /*.flatSize {*/
+    /*    margin-right: 0.7rem;*/
+    /*}*/
+
+    .select {
+        margin-bottom: 2rem;
+    }
+}

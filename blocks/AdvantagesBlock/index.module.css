@@ -1,0 +1,54 @@
+.container {}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+    text-align: right;
+    width: 40%;
+}
+
+.reversedContainer {
+    text-align: left;
+}
+
+.title {
+    font-family: Austin;
+    /*font-size: 64px;*/
+    /*line-height: 80px;*/
+    color: #B28353;
+    margin-bottom: 2.5rem;
+}
+
+.description {
+    font-family: Gilroy;
+    /*font-size: 24px;*/
+    /*line-height: 48px;*/
+    color: #000000;
+}
+
+.imgContainer {
+    width: 60%;
+    height: auto;
+}
+
+.img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+@media (max-width: 650px) {
+}
