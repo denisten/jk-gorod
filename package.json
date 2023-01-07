@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "local": "next dev -H 192.168.1.0",
-    "install": "npm install --legacy-peer-deps"
+    "local": "next dev -H 192.168.1.0"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
