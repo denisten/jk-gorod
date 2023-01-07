@@ -4,9 +4,9 @@ import { Text } from "../Text";
 import Image from "next/image";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { IFlatsData } from "../../apartments/apartments";
 import { ELang } from "../../types";
 import { content } from "../../content";
+import { IFlatsData } from "../../apartments";
 
 interface IProps {
   flats: IFlatsData[];

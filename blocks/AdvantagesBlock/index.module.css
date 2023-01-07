@@ -25,16 +25,12 @@
 
 .title {
     font-family: Austin;
-    /*font-size: 64px;*/
-    /*line-height: 80px;*/
     color: #B28353;
     margin-bottom: 2.5rem;
 }
 
 .description {
     font-family: Gilroy;
-    /*font-size: 24px;*/
-    /*line-height: 48px;*/
     color: #000000;
 }
 

@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import styles from "./index.module.css";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,68 +8,58 @@ import { content } from "../../content";
 import { Element } from "react-scroll";
 import { EBlocks, ELang } from "../../types";
 import { Text } from "../../components/Text";
+import ScrollAnimation from "react-animate-on-scroll";
 interface IProps {
   lang: ELang;
 }
 
 export const ChessBlockMobile: FC<IProps> = ({ lang }) => {
   const data = content[lang].chessBlock;
-  const [imgId, setImgId] = useState(0);
   return (
     <Element name={EBlocks.CHESS} className={styles.container}>
-      <Text
-        title
-        text={content[lang].chessBlock.title}
-        className={styles.blockTitle}
-      />
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        centeredSlides={true}
-        pagination={{
-          clickable: true,
-          dynamicBullets: true,
-        }}
-        navigation={true}
-        // autoplay={{
-        //   delay: 1500,
-        //   disableOnInteraction: false,
-        // }}
-        modules={[Autoplay, Navigation, Pagination]}
-        className={styles.swiper}
-        allowTouchMove={true}
-        onSlideChange={(e) => setImgId(e.activeIndex)}
-      >
-        {data.content.map((el, id) => (
-          <SwiperSlide className={cn(styles.swiperSlide)} key={id}>
-            <div>
-              <Image
-                className={styles.image}
-                src={el.mobileImg}
-                alt="apartment img"
-              />
-              <div
-                className={styles.slideText}
-                // style={{ background: "green" }}
+      <ScrollAnimation animateIn="animate__fadeInLeftBig" animateOnce={true}>
+        <Text
+          title
+          text={content[lang].chessBlock.title}
+          className={styles.blockTitle}
+        />
+      </ScrollAnimation>
 
-                // style={{ backgroundImage: `url(${el.img.src})` }}
-              >
-                <Text className={styles.title} title text={el.title} />
-                <Text className={styles.text} text={el.description} />
+      <ScrollAnimation animateIn="animate__fadeInRightBig" animateOnce={true}>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          centeredSlides={true}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+          }}
+          navigation={true}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Navigation, Pagination]}
+          className={styles.swiper}
+          allowTouchMove={true}
+        >
+          {data.content.map((el, id) => (
+            <SwiperSlide className={cn(styles.swiperSlide)} key={id}>
+              <div>
+                <Image
+                  className={styles.image}
+                  src={el.mobileImg}
+                  alt="apartment img"
+                />
+                <div className={styles.slideText}>
+                  <Text className={styles.title} title text={el.title} />
+                  <Text className={styles.text} text={el.description} />
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      {/*<Animated*/}
-      {/*  isVisible={true}*/}
-      {/*  animationIn="bounceInLeft"*/}
-      {/*  animationOut="bounceInRight"*/}
-      {/*  animationInDuration={2}*/}
-      {/*  className={cn(styles.textContent)}*/}
-      {/*>*/}
-      {/*  <div className={styles.title}>hello its block</div>*/}
-      {/*</Animated>*/}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </ScrollAnimation>
     </Element>
   );
 };

@@ -21,7 +21,11 @@ export const AboutBlock: FC<IProps> = ({ lang, openModal }) => {
   const isMobile = useIsMobile();
   const localContent = content[lang].aboutBlock;
   const advantages = (
-    <div className={styles.advantagesContainer}>
+    <ScrollAnimation
+      animateIn="animate__fadeInRightBig"
+      animateOnce={true}
+      className={styles.advantagesContainer}
+    >
       {localContent.advantages.map((advantage) => (
         <div className={styles.advantage} key={advantage.title}>
           <Text
@@ -36,7 +40,7 @@ export const AboutBlock: FC<IProps> = ({ lang, openModal }) => {
           />
         </div>
       ))}
-    </div>
+    </ScrollAnimation>
   );
   return (
     <Element name={EBlocks.ABOUT}>
@@ -51,7 +55,6 @@ export const AboutBlock: FC<IProps> = ({ lang, openModal }) => {
           <ScrollAnimation
             animateIn="animate__fadeInLeftBig"
             animateOnce={true}
-            delay={50}
           >
             <Text
               text={localContent.description}
@@ -62,7 +65,6 @@ export const AboutBlock: FC<IProps> = ({ lang, openModal }) => {
           <ScrollAnimation
             animateIn="animate__fadeInLeftBig"
             animateOnce={true}
-            delay={70}
           >
             {isMobile ? null : advantages}
           </ScrollAnimation>
@@ -70,10 +72,10 @@ export const AboutBlock: FC<IProps> = ({ lang, openModal }) => {
           <ScrollAnimation
             animateIn="animate__fadeInLeftBig"
             animateOnce={true}
-            delay={100}
           >
             {isMobile ? null : (
               <Button
+                className={styles.button}
                 onClick={openModal}
                 text={localContent.button}
                 title={false}

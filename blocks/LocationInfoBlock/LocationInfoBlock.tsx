@@ -23,17 +23,12 @@ export const LocationInfoBlock: React.FC<IProps> = ({ lang }) => {
       <ScrollAnimation animateIn="animate__fadeInLeftBig" animateOnce={true}>
         <Text text={localContent.title} className={styles.title} title />
       </ScrollAnimation>
-      <ScrollAnimation
-        animateIn="animate__fadeInRightBig"
-        animateOnce={true}
-        delay={50}
-      >
+      <ScrollAnimation animateIn="animate__fadeInRightBig" animateOnce={true}>
         <Text text={localContent.description} className={styles.description} />
       </ScrollAnimation>
       <ScrollAnimation
         animateIn="animate__fadeInLeftBig"
         animateOnce={true}
-        delay={70}
         className={styles.imageContainer}
       >
         <Image src={locationImg} alt="locationImg" className={styles.img} />

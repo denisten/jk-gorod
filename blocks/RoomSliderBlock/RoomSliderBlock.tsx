@@ -17,7 +17,7 @@ interface IProps {
 }
 
 export const RoomSliderBlock: React.FC<IProps> = ({ lang }) => {
-  const [selectedBlock, setSelectedBlock] = useState<string>("M");
+  const [selectedBlock, setSelectedBlock] = useState<string>("K");
   // @ts-ignore
   const flatsSize = blocksInfo[selectedBlock];
   const [selectedFlatSize, setSelectedFlatSize] = useState(flatsSize[0]);
@@ -62,6 +62,7 @@ export const RoomSliderBlock: React.FC<IProps> = ({ lang }) => {
           <div className={styles.flatSizeContainer}>
             {flatsSize?.map((size: number) => (
               <div
+                key={size}
                 className={cn(styles.flatSize, {
                   [styles.selected]: selectedFlatSize == size,
                 })}

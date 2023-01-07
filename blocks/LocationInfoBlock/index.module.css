@@ -1,6 +1,5 @@
 .container {
     padding: 0 10rem;
-    margin-bottom: 5rem;
     position: relative;
 }
 
@@ -20,7 +19,7 @@
     font-family: Austin;
     color: #B28353;
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .description {
@@ -28,7 +27,7 @@
     text-align: center;
     color: #000000;
     padding: 0 200px;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .img {
@@ -44,7 +43,7 @@
 
 @media (max-width: 650px) {
     .container {
-        padding: 0 3rem;
+        padding: 2rem 3rem;
     }
 
     .container:before {

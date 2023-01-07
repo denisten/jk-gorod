@@ -1,13 +1,10 @@
 .container {
     position: relative;
-    padding-top: 5rem;
+    padding: 2rem 0;
 }
 
 .title {
     font-family: Austin;
-    /*font-weight: 700;*/
-    /*font-size: 64px;*/
-    /*line-height: 48px;*/
     color: #B28353;
     margin-bottom: 2rem;
     text-align: center;
@@ -54,10 +51,6 @@
 }
 
 @media (max-width: 650px) {
-    .container {
-        padding-top: 0;
-    }
-
     .map {
         height: 420px;
     }

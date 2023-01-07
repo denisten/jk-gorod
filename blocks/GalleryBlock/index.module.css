@@ -1,5 +1,5 @@
 .container {
-    padding: 5rem 0 0 0;
+    padding: 2rem 0;
 }
 
 .title {
@@ -32,16 +32,12 @@
 }
 
 @media (max-width: 650px) {
-    .container {
-        margin-bottom: 40px;
-    }
-
     .swiper {
         height: 247px;
     }
 
     .title {
         font-size: 24px;
-        margin-bottom: 12px;
+        margin-bottom: 2rem;
     }
 }

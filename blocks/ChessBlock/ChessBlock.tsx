@@ -28,7 +28,6 @@ export const ChessBlock: FC<IProps> = ({ lang }) => {
           <ScrollAnimation
             animateIn={`animate__fadeIn${idx % 2 == 0 ? "Left" : "Right"}Big`}
             className={styles.element}
-            delay={idx % 2 == 0 ? 0 : 200}
           >
             <Text
               className={cn(styles.title, {
@@ -46,7 +45,6 @@ export const ChessBlock: FC<IProps> = ({ lang }) => {
           </ScrollAnimation>
           <ScrollAnimation
             animateIn={`animate__fadeIn${idx % 2 != 0 ? "Left" : "Right"}Big`}
-            delay={idx % 2 != 0 ? 0 : 200}
             className={styles.imageContainer}
           >
             <Image

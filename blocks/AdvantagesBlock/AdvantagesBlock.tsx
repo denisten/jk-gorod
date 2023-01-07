@@ -33,7 +33,6 @@ export const AdvantagesBlock: FC<IProps> = ({ lang }) => {
               id % 2 == 0 ? "animate__fadeInRight" : "animate__fadeInLeft"
             }
             animateOnce={true}
-            delay={150}
             className={cn(styles.textContainer, {
               [styles.reversedContainer]: id % 2 != 0,
             })}

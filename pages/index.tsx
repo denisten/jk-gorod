@@ -62,7 +62,7 @@ export default function Home() {
       )}
       <GalleryBlock lang={lang} />
       <LocationBlock lang={lang} />
-      <FooterBlock lang={lang} />
+      {/*<FooterBlock lang={lang} />*/}
       <CallMeModal
         lang={lang}
         isOpen={isOpenModal}
