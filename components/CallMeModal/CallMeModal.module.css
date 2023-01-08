@@ -28,7 +28,7 @@
 
 .input {
     width: 30vw;
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
 }
 
 .button {
