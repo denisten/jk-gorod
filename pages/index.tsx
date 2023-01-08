@@ -7,10 +7,8 @@ import { ChessBlock } from "../blocks/ChessBlock";
 import { useIsMobile } from "../utils/getIsMobile";
 import { ChessBlockMobile } from "../blocks/ChessBlockMobile";
 import { GalleryBlock } from "../blocks/GalleryBlock";
-import { BuildingStepsBlock } from "../blocks/BuildingStepsBlock";
 import { LocationBlock } from "../blocks/LocationBlock";
-import { FooterBlock } from "../blocks/FooterBlock";
-import { useState } from "react";
+import React, { useState } from "react";
 import "swiper/css";
 import "animate.css/animate.min.css";
 import "animate.css";
@@ -27,6 +25,7 @@ import "animate.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { LocationMobileBlock } from "../blocks/LocationMobileBlock";
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -61,8 +60,11 @@ export default function Home() {
         <AdvantagesBlock lang={lang} />
       )}
       <GalleryBlock lang={lang} />
-      <LocationBlock lang={lang} />
-      {/*<FooterBlock lang={lang} />*/}
+      {isMobile ? (
+        <LocationMobileBlock lang={lang} />
+      ) : (
+        <LocationBlock lang={lang} openModal={openModal} />
+      )}
       <CallMeModal
         lang={lang}
         isOpen={isOpenModal}

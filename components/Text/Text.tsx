@@ -12,6 +12,7 @@ interface IProps {
   fontWeight?: string;
   fontFamily?: EFonts;
   onClick?: () => void;
+  type?: "tel" | "mail" | "text";
 }
 
 export const Text: FC<IProps> = ({
@@ -22,11 +23,27 @@ export const Text: FC<IProps> = ({
   fontWeight,
   fontFamily = "Austin",
   onClick,
+  type = "text",
 }) => {
+  if (type === "tel" || type === "mail") {
+    const href =
+      (type === "tel" ? "tel:" : "mailto:") + text.replaceAll(" ", "");
+    return (
+      <a
+        className={cn(className, styles.container, {
+          [styles.kazimir]: fontFamily === EFonts.KAZIMIR,
+          [styles.title]: title,
+        })}
+        href={href}
+      >
+        {text}
+      </a>
+    );
+  }
   return (
     <div
       className={cn(className, styles.container, {
-        [styles.gilroy]: fontFamily === EFonts.GILROY,
+        [styles.kazimir]: fontFamily === EFonts.KAZIMIR,
         [styles.title]: title,
       })}
       style={{ fontSize, fontWeight }}

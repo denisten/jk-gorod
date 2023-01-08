@@ -7,7 +7,6 @@ import { EBlocks, EFonts, ELang } from "../../types";
 import { content } from "../../content";
 import { Element } from "react-scroll";
 import { SlideShow } from "../../components/SlideShow";
-import MountainImg from "./mountain.jpeg";
 import { MobileSlideShow } from "../../components/MobileSlideShow";
 
 interface IProps {
@@ -21,9 +20,9 @@ export const WelcomeBlock: FC<IProps> = ({ lang, openModal }) => {
   return (
     <Element name={EBlocks.WELCOME} className={styles.container}>
       {isMobile ? (
-        <MobileSlideShow images={[localContent.mobileBackground]} />
+        <MobileSlideShow images={localContent.mobileBackground} />
       ) : (
-        <SlideShow images={[localContent.background]} />
+        <SlideShow images={localContent.background} />
       )}
       <div className={styles.contentContainer}>
         {isMobile ? (

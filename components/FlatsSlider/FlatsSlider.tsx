@@ -65,8 +65,8 @@ export const FlatsSlider: React.FC<IProps> = ({ flats, lang }) => {
                 </div>
               </div>
               <ol className={styles.flatOl}>
-                {flat.rooms.map((room) => (
-                  <li key={room.title}>
+                {flat.rooms.map((room, id) => (
+                  <li key={room.title + id}>
                     <div className={styles.row}>
                       <Text
                         //@ts-ignore

@@ -18,7 +18,10 @@ export const AdvantagesBlock: FC<IProps> = ({ lang }) => {
   return (
     <div className={styles.container}>
       {localContent.map((row, id) => (
-        <div className={cn(styles.row, { [styles.reversed]: id % 2 != 0 })}>
+        <div
+          className={cn(styles.row, { [styles.reversed]: id % 2 != 0 })}
+          key={id}
+        >
           <ScrollAnimation
             animateIn={
               id % 2 != 0 ? "animate__fadeInRight" : "animate__fadeInLeft"

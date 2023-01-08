@@ -40,6 +40,7 @@
 .description {
     text-align: justify;
     margin-bottom: 2rem;
+    white-space: pre-line;
 }
 
 .advantagesContainer {
@@ -135,9 +136,9 @@
 
 
     .description {
-        font-family: Gilroy;
+        font-family: Kazimir;
         text-align: justify;
-        margin-bottom: 12px;
+        margin-bottom: 1rem;
         color: #000000;
     }
 

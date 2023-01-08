@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import styles from "./index.module.css";
-import { Fade, Zoom } from "react-slideshow-image";
+import { Fade } from "react-slideshow-image";
 import Image, { StaticImageData } from "next/image";
-import cn from "classnames";
 import "react-slideshow-image/dist/styles.css";
+import cn from "classnames";
 
 interface IProps {
   images: StaticImageData[];
@@ -15,8 +15,8 @@ export const SlideShow: FC<IProps> = ({ images }) => {
       <Fade autoplay={true} duration={2000} arrows={false}>
         {images.map((img, index) => {
           return (
-            <div key={index} className={styles.slide}>
-              <Image alt="1" src={img} fill />
+            <div key={index} className={cn("each-fade", styles.slide)}>
+              <Image alt={index.toString()} src={img.src} fill />
             </div>
           );
         })}

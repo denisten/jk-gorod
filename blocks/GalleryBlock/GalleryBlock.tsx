@@ -19,6 +19,7 @@ interface IProps {
 
 export const GalleryBlock: FC<IProps> = ({ lang }) => {
   const isMobile = useIsMobile();
+  const images = content[lang].galleryBlock.images;
   return (
     <Element name={EBlocks.GALLERY} className={styles.container}>
       <ScrollAnimation animateIn="animate__zoomIn" animateOnce={true}>
@@ -40,7 +41,7 @@ export const GalleryBlock: FC<IProps> = ({ lang }) => {
           className={styles.swiper}
           allowTouchMove={true}
         >
-          {[img1, img2, img1].map((image, id) => (
+          {images.map((image, id) => (
             <SwiperSlide className={cn(styles.swiperSlide)} key={id}>
               <Image
                 fill

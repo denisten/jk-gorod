@@ -1,19 +1,41 @@
 import constructionImg from "./images/chessBlock/construction.png";
 import noCarsInsideImg from "./images/chessBlock/noCarsInside.png";
-import businessImg from "./images/chessBlock/business.png";
 import constructionMobileImg from "./images/chessBlockMobile/construction.png";
 import noCarsInsideMobileImg from "./images/chessBlockMobile/noCarsInside.png";
-import businessMobileImg from "./images/chessBlockMobile/business.png";
 import phoneSVG from "./images/locationBlock/phone.svg";
 import websiteSVG from "./images/locationBlock/website.svg";
 import mailSVG from "./images/locationBlock/mail.svg";
 import advantageImg1 from "./images/advantagesBlock/1.png";
 import advantageImg2 from "./images/advantagesBlock/2.png";
 import advantageImg3 from "./images/advantagesBlock/3.png";
-import locationSvg from "./images/locationBlock/locationPoing.svg";
 import telegramSVG from "./images/locationBlock/telegram.svg";
-import welcomeBackground from "./images/welcomeBlock/background.webp";
+import welcome1 from "./images/welcomeBlock/background.webp";
 import welcomeMobileBackground from "./images/welcomeBlock/backgroundMobile.webp";
+import welcome2 from "./images/welcomeBlock/2.png";
+import welcome3 from "./images/welcomeBlock/3.png";
+import welcome4 from "./images/welcomeBlock/4.png";
+import gallery1 from "./images/galleryBlock/1.png";
+import gallery2 from "./images/galleryBlock/2.png";
+import gallery3 from "./images/galleryBlock/3.png";
+// import gallery4 from "./images/galleryBlock/4.png";
+// import gallery5 from "./images/galleryBlock/5.png";
+// import gallery6 from "./images/galleryBlock/6.png";
+// import gallery7 from "./images/galleryBlock/7.png";
+// import gallery8 from "./images/galleryBlock/8.png";
+// import gallery9 from "./images/galleryBlock/9.png";
+// import gallery10 from "./images/galleryBlock/10.png";
+// import gallery11 from "./images/galleryBlock/11.png";
+// import gallery12 from "./images/galleryBlock/12.png";
+// import gallery13 from "./images/galleryBlock/13.png";
+// import gallery14 from "./images/galleryBlock/14.png";
+// import gallery15 from "./images/galleryBlock/15.png";
+// import gallery16 from "./images/galleryBlock/16.png";
+// import gallery17 from "./images/galleryBlock/17.png";
+// import gallery18 from "./images/galleryBlock/18.png";
+// import gallery19 from "./images/galleryBlock/19.png";
+// import gallery20 from "./images/galleryBlock/20.png";
+// import gallery21 from "./images/galleryBlock/21.png";
+// import gallery22 from "./images/galleryBlock/22.png";
 import { EBlocks } from "./types";
 export const content = {
   uzb: {
@@ -48,10 +70,10 @@ export const content = {
       { title: "Joylashuv", id: EBlocks.LOCATION },
     ],
     welcomeBlock: {
-      background: welcomeBackground,
-      mobileBackground: welcomeMobileBackground,
+      background: [welcome1, welcome2, welcome3, welcome4],
+      mobileBackground: [welcomeMobileBackground],
       description:
-        "Выберите свой крепкий дом для крепкой семьи в одном из 13 блоков жилого комплекса",
+        "Выберите свой крепкий дом для крепкой семьи в одном из 8 блоков жилого комплекса",
       button: "Оставить заявку",
       title: "GOROD!",
       mobileTitle: "GOROD",
@@ -61,9 +83,9 @@ export const content = {
     aboutBlock: {
       title: "О КОМПЛЕКСЕ",
       description:
-        "На территории ЖК представлены 6, 8 и 10-этажные жилые дома с просторными террасами и балконами. Квартиры имеют площадь от 43 до 184 квадр" +
-        "атных метров. Колонно-ригельная конструкция наших домов позволяет выполнить любую планировку квартиры, а стены из жжёного кирпича обеспечат " +
-        "высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год. ",
+        "GOROD от Mirador Group - это современный комплекс апартаментов бизнес-класса расположенный в престижном районе столицы.\n" +
+        "На территории ЖК представлены 6, 8 и 10-этажные жилые дома с просторными террасами " +
+        "и балконами. Квартиры имеют площадь от 46 до 149 квадратных метров.",
       advantages: [
         { title: "Планировок", count: "19" },
         { title: "Парковочных мест", count: "114" },
@@ -73,24 +95,22 @@ export const content = {
     },
     advantagesBlock: [
       {
-        title: "МЕЖДУНАРОДНЫЕ СТАНДАРТЫ СТРОИТЕЛЬСТВА",
+        title: "КРУГЛОСУТОЧНАЯ ОХРАНА",
         description:
-          "Колонно-ригельная конструкция наших домов позволяет выполнить любую планировку квартиры, а стены из жжёного" +
-          " кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
+          "На всей территории будет круглосуточное видеонаблюдение, которое обеспечит безопасность жильцам комплекса и их гостям",
         image: advantageImg1,
       },
       {
-        title: "ОЗЕЛЕНЕННЫЙ ДВОР",
+        title: "БЛАГОУСТРОЕННАЯ ТЕРРИТОРИЯ",
         description:
-          "Колонно-ригельная конструкция наших домов позволяет выполнить любую планировку квартиры, а стены из жжёного" +
-          " кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
+          "Во дворах предусмотрены зеленые зоны с ландшафтным дизайном, многофункциональные детские площадки, беседки для отдыха, дорожки для прогулок.",
         image: advantageImg2,
       },
       {
         title: "ТОРГОВАЯ ЗОНА",
         description:
-          "Колонно-ригельная конструкция наших домов позволяет выполнить любую планировку квартиры, а стены из жжёного" +
-          " кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
+          "Жилой комплекс GOROD предлагает помещения для коммерческих объектов, здесь вас ожидает оживленный район с большим числом потенциальных потребителей услуг" +
+          ", по внешнему периметру ЖК предусмотрена буферная зона для парковки посетителей коммерческой зоны.",
         image: advantageImg3,
       },
     ],
@@ -100,7 +120,8 @@ export const content = {
         {
           title: "Конструкция",
           description:
-            "Колонно-ригельная конструкция наших домов позволяет выполнить любую планировку квартиры, а стены из жжёного кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
+            "Монолитная колонно-ригельная система строительства наших домов позволяет выполнить любую планировку" +
+            " квартиры, а стены из жженого кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
           img: constructionImg,
           mobileImg: constructionMobileImg,
         },
@@ -110,13 +131,6 @@ export const content = {
             "Подземный паркинг позволит не переживать за размещение вашего авто и обеспечит комфортную и безопасную зону для прогулок с детьми в уютных зеленых дворах с многофункциональными игровыми площадками.",
           img: noCarsInsideImg,
           mobileImg: noCarsInsideMobileImg,
-        },
-        {
-          title: "Бизнес",
-          description:
-            "ЖК GOROD также предлагает помещения для коммерческих объектов на первом этаже — отличное решение для бизнеса, ведь здесь вас ожидает оживленный район с большим числом потенциальных потребителей услуг.",
-          img: businessImg,
-          mobileImg: businessMobileImg,
         },
       ],
     },
@@ -135,22 +149,46 @@ export const content = {
     },
     galleryBlock: {
       title: "ГАЛЕРЕЯ",
+      images: [
+        gallery1,
+        gallery2,
+        gallery3,
+        // gallery4,
+        // gallery5,
+        // gallery6,
+        // gallery7,
+        // gallery8,
+        // gallery9,
+        // gallery10,
+        // gallery11,
+        // gallery12,
+        // gallery13,
+        // gallery14,
+        // gallery15,
+        // gallery16,
+        // gallery17,
+        // gallery18,
+        // gallery19,
+        // gallery20,
+        // gallery21,
+        // gallery22,
+      ],
     },
     buildingStepsBlock: {
       title: "ХОД СТРОИТЕЛЬСТВА",
     },
     locationBlock: {
-      title: "ЛОКАЦИЯ",
+      title: "ОФИС ПРОДАЖ",
       address: "Ташкент, Яшнабадский р-н, Мавлоно Ризови, 2",
-      locationImg: locationSvg,
       phoneImg: phoneSVG,
-      phone: "+998 90 123 45 67",
+      phone: "+998 97 3359999",
       mailImg: mailSVG,
-      mail: "test@mail.uz",
+      mail: "jkgorod@gmail.com",
       websiteImg: websiteSVG,
       website: "www.website.uz",
       telegramImg: telegramSVG,
       telegram: "@telegram",
+      buttonText: "Записаться на встречу",
     },
     footerBlock: {
       navigation: [
@@ -195,10 +233,10 @@ export const content = {
       { title: "Локация", id: EBlocks.LOCATION },
     ],
     welcomeBlock: {
-      background: welcomeBackground,
-      mobileBackground: welcomeMobileBackground,
+      background: [welcome1, welcome2, welcome3, welcome4],
+      mobileBackground: [welcomeMobileBackground],
       description:
-        "Выберите свой крепкий дом для крепкой семьи в одном из 13 блоков жилого комплекса",
+        "Выберите свой крепкий дом для крепкой семьи в одном из 8 блоков жилого комплекса",
       button: "Оставить заявку",
       title: "GOROD!",
       mobileTitle: "GOROD",
@@ -208,9 +246,9 @@ export const content = {
     aboutBlock: {
       title: "О КОМПЛЕКСЕ",
       description:
-        "На территории ЖК представлены 6, 8 и 10-этажные жилые дома с просторными террасами и балконами. Квартиры имеют площадь от 43 до 184 квадр" +
-        "атных метров. Колонно-ригельная конструкция наших домов позволяет выполнить любую планировку квартиры, а стены из жжёного кирпича обеспечат " +
-        "высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год. ",
+        "GOROD от Mirador Group - это современный комплекс апартаментов бизнес-класса расположенный в престижном районе столицы.\n" +
+        "На территории ЖК представлены 6, 8 и 10-этажные жилые дома с просторными террасами " +
+        "и балконами. Квартиры имеют площадь от 46 до 149 квадратных метров.",
       advantages: [
         { title: "Планировок", count: "19" },
         { title: "Парковочных мест", count: "114" },
@@ -220,24 +258,22 @@ export const content = {
     },
     advantagesBlock: [
       {
-        title: "МЕЖДУНАРОДНЫЕ СТАНДАРТЫ СТРОИТЕЛЬСТВА",
+        title: "КРУГЛОСУТОЧНАЯ ОХРАНА",
         description:
-          "Колонно-ригельная конструкция наших домов позволяет выполнить любую планировку квартиры, а стены из жжёного" +
-          " кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
+          "На всей территории будет круглосуточное видеонаблюдение, которое обеспечит безопасность жильцам комплекса и их гостям",
         image: advantageImg1,
       },
       {
-        title: "ОЗЕЛЕНЕННЫЙ ДВОР",
+        title: "БЛАГОУСТРОЕННАЯ ТЕРРИТОРИЯ",
         description:
-          "Колонно-ригельная конструкция наших домов позволяет выполнить любую планировку квартиры, а стены из жжёного" +
-          " кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
+          "Во дворах предусмотрены зеленые зоны с ландшафтным дизайном, многофункциональные детские площадки, беседки для отдыха, дорожки для прогулок.",
         image: advantageImg2,
       },
       {
         title: "ТОРГОВАЯ ЗОНА",
         description:
-          "Колонно-ригельная конструкция наших домов позволяет выполнить любую планировку квартиры, а стены из жжёного" +
-          " кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
+          "Жилой комплекс GOROD предлагает помещения для коммерческих объектов, здесь вас ожидает оживленный район с большим числом потенциальных потребителей услуг" +
+          ", по внешнему периметру ЖК предусмотрена буферная зона для парковки посетителей коммерческой зоны.",
         image: advantageImg3,
       },
     ],
@@ -247,7 +283,8 @@ export const content = {
         {
           title: "Конструкция",
           description:
-            "Колонно-ригельная конструкция наших домов позволяет выполнить любую планировку квартиры, а стены из жжёного кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
+            "Монолитная колонно-ригельная система строительства наших домов позволяет выполнить любую планировку" +
+            " квартиры, а стены из жженого кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
           img: constructionImg,
           mobileImg: constructionMobileImg,
         },
@@ -257,13 +294,6 @@ export const content = {
             "Подземный паркинг позволит не переживать за размещение вашего авто и обеспечит комфортную и безопасную зону для прогулок с детьми в уютных зеленых дворах с многофункциональными игровыми площадками.",
           img: noCarsInsideImg,
           mobileImg: noCarsInsideMobileImg,
-        },
-        {
-          title: "Бизнес",
-          description:
-            "ЖК GOROD также предлагает помещения для коммерческих объектов на первом этаже — отличное решение для бизнеса, ведь здесь вас ожидает оживленный район с большим числом потенциальных потребителей услуг.",
-          img: businessImg,
-          mobileImg: businessMobileImg,
         },
       ],
     },
@@ -282,22 +312,46 @@ export const content = {
     },
     galleryBlock: {
       title: "ГАЛЕРЕЯ",
+      images: [
+        gallery1,
+        gallery2,
+        gallery3,
+        // gallery4,
+        // gallery5,
+        // gallery6,
+        // gallery7,
+        // gallery8,
+        // gallery9,
+        // gallery10,
+        // gallery11,
+        // gallery12,
+        // gallery13,
+        // gallery14,
+        // gallery15,
+        // gallery16,
+        // gallery17,
+        // gallery18,
+        // gallery19,
+        // gallery20,
+        // gallery21,
+        // gallery22,
+      ],
     },
     buildingStepsBlock: {
       title: "ХОД СТРОИТЕЛЬСТВА",
     },
     locationBlock: {
-      title: "ЛОКАЦИЯ",
+      title: "ОФИС ПРОДАЖ",
       address: "Ташкент, Яшнабадский р-н, Мавлоно Ризови, 2",
-      locationImg: locationSvg,
       phoneImg: phoneSVG,
-      phone: "+998 90 123 45 67",
+      phone: "+998 97 3359999",
       mailImg: mailSVG,
-      mail: "test@mail.uz",
+      mail: "jkgorod@gmail.com",
       websiteImg: websiteSVG,
       website: "www.website.uz",
       telegramImg: telegramSVG,
       telegram: "@telegram",
+      buttonText: "Записаться на встречу",
     },
     footerBlock: {
       navigation: [

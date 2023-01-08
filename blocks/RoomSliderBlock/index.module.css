@@ -11,7 +11,7 @@
 }
 
 .text {
-    font-family: Gilroy;
+    font-family: Kazimir;
     font-weight: 300;
     /*font-size: 40px;*/
     text-align: center;
@@ -42,14 +42,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Gilroy;
+    font-family: Kazimir;
     font-weight: 300;
     margin-right: 2rem;
     color: #000000;
 }
 
 .flatSizeNumber {
-    font-family: Gilroy;
+    font-family: Kazimir;
     font-size: 1.75rem;
     margin-bottom: 12px;
     font-weight: normal;

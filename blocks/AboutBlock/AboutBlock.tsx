@@ -35,7 +35,7 @@ export const AboutBlock: FC<IProps> = ({ lang, openModal }) => {
           />
           <Text
             text={advantage.title}
-            fontFamily={EFonts.GILROY}
+            fontFamily={EFonts.KAZIMIR}
             className={styles.advantageTitle}
           />
         </div>
@@ -46,22 +46,34 @@ export const AboutBlock: FC<IProps> = ({ lang, openModal }) => {
     <Element name={EBlocks.ABOUT}>
       <div className={styles.container}>
         <div className={styles.descriptionContainer}>
-          <ScrollAnimation
-            animateIn="animate__fadeInLeftBig"
-            animateOnce={true}
-          >
+          {isMobile ? (
             <Text text={localContent.title} className={styles.title} title />
-          </ScrollAnimation>
-          <ScrollAnimation
-            animateIn="animate__fadeInLeftBig"
-            animateOnce={true}
-          >
+          ) : (
+            <ScrollAnimation
+              animateIn="animate__fadeInLeftBig"
+              animateOnce={true}
+            >
+              <Text text={localContent.title} className={styles.title} title />
+            </ScrollAnimation>
+          )}
+          {isMobile ? (
             <Text
               text={localContent.description}
-              fontFamily={EFonts.GILROY}
+              fontFamily={EFonts.KAZIMIR}
               className={styles.description}
             />
-          </ScrollAnimation>
+          ) : (
+            <ScrollAnimation
+              animateIn="animate__fadeInLeftBig"
+              animateOnce={true}
+            >
+              <Text
+                text={localContent.description}
+                fontFamily={EFonts.KAZIMIR}
+                className={styles.description}
+              />
+            </ScrollAnimation>
+          )}
           <ScrollAnimation
             animateIn="animate__fadeInLeftBig"
             animateOnce={true}

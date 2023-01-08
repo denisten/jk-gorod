@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export enum EFonts {
-  GILROY = "Gilroy",
+  KAZIMIR = "Kazimir",
   Austin = "Austin",
 }
 

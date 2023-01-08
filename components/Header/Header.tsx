@@ -69,7 +69,7 @@ export const Header: FC<IProps> = ({ isMenuOpen, callback, lang, setLang }) => {
             key={id}
             className={styles.element}
             text={title}
-            fontFamily={EFonts.Austin}
+            fontFamily={EFonts.KAZIMIR}
           />
         ))}
       </div>

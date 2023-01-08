@@ -18,7 +18,7 @@ export const ChessBlock: FC<IProps> = ({ lang }) => {
   const localContent = content[lang].chessBlock;
   if (isMobile) return null;
   return (
-    <Element name={EBlocks.ADVANTAGES} className={styles.container}>
+    <Element name={EBlocks.CHESS} className={styles.container}>
       <Text text={localContent.title} className={styles.blockTitle} title />
       {localContent.content.map((element, idx) => (
         <div
@@ -28,6 +28,7 @@ export const ChessBlock: FC<IProps> = ({ lang }) => {
           <ScrollAnimation
             animateIn={`animate__fadeIn${idx % 2 == 0 ? "Left" : "Right"}Big`}
             className={styles.element}
+            animateOnce={true}
           >
             <Text
               className={cn(styles.title, {
@@ -44,6 +45,7 @@ export const ChessBlock: FC<IProps> = ({ lang }) => {
             />
           </ScrollAnimation>
           <ScrollAnimation
+            animateOnce={true}
             animateIn={`animate__fadeIn${idx % 2 != 0 ? "Left" : "Right"}Big`}
             className={styles.imageContainer}
           >

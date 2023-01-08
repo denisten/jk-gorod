@@ -5,8 +5,14 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="ru">
-        <Head></Head>
-        <NextScript></NextScript>
+        <Head>
+          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        </Head>
+
+        <head>
+          <title>ЖК Город</title>
+        </head>
+        <NextScript />
         <body>
           <Main />
           <div id="CallMeModal" />

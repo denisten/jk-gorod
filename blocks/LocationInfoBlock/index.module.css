@@ -23,7 +23,7 @@
 }
 
 .description {
-    font-family: Gilroy;
+    font-family: Kazimir;
     text-align: center;
     color: #000000;
     padding: 0 200px;
@@ -56,6 +56,6 @@
     }
 
     .img {
-        width: 80vw;
+        width: 90vw;
     }
 }

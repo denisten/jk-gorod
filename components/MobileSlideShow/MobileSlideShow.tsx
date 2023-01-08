@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import styles from "./index.module.css";
-import { Fade, Zoom } from "react-slideshow-image";
+import { Fade } from "react-slideshow-image";
 import Image, { StaticImageData } from "next/image";
-import cn from "classnames";
 import "react-slideshow-image/dist/styles.css";
 
 interface IProps {
