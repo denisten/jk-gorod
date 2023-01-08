@@ -23,7 +23,7 @@ export const WelcomeBlock: FC<IProps> = ({ lang, openModal }) => {
       {isMobile ? (
         <MobileSlideShow images={[localContent.mobileBackground]} />
       ) : (
-        <SlideShow images={[MountainImg, localContent.background]} />
+        <SlideShow images={[localContent.background]} />
       )}
       <div className={styles.contentContainer}>
         {isMobile ? (
