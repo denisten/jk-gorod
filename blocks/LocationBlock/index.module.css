@@ -1,10 +1,9 @@
 .container {
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
     display: flex;
     width: 100%;
     height: 710px;
-    /*background: green;*/
-    position: relative;;
+    position: relative;
 }
 
 .title {
@@ -19,6 +18,7 @@
     width: 60%;
     height: 100%;
     margin-bottom: 4px;
+    position: relative;
 }
 
 .row {
@@ -40,7 +40,7 @@
 }
 
 .infoContainer {
-    background: #345C61;
+    background: #B28353;
     width: 40%;
     height: 100%;
     position: relative;
@@ -59,4 +59,18 @@
     width: 290px;
     height: fit-content;
     background: #ffffff;
+}
+
+.infoText {
+    color: #000000;
+}
+
+.mapIcon {
+    position: absolute;
+    top: 44%;
+    left: 47%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
 }

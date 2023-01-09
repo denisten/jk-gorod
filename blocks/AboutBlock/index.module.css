@@ -80,12 +80,12 @@
 .secondImg {
     position: relative;
     bottom: 18%;
-    right: 68%;
+    right: 45%;
 
 }
 
 .img {
-    max-width: 100%;
+    width: 36vw;
     height: auto;
 }
 
@@ -189,5 +189,11 @@
         font-size: 16px;
         line-height: 24px;
         color: #000000;
+    }
+
+
+    .img {
+        width: 100%;
+        height: auto;
     }
 }

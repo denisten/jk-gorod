@@ -6,6 +6,8 @@ import { Element } from "react-scroll";
 import { EBlocks, ELang } from "../../types";
 import { scroller } from "react-scroll";
 import { useIsMobile } from "../../utils/getIsMobile";
+import Image from "next/image";
+import miradorLogo from "./miradorLogo.png";
 
 interface IProps {
   lang: ELang;
@@ -14,13 +16,16 @@ interface IProps {
 export const FooterBlock: FC<IProps> = ({ lang }) => {
   const localContent = content[lang].footerBlock;
   const isMobile = useIsMobile();
+  if (isMobile) return null;
   return (
     <Element name={EBlocks.FOOTER} className={styles.container}>
       <div className={styles.left} />
+      <Image src={miradorLogo} alt="miradorLogo" className={styles.logo} />
       {isMobile ? null : (
         <div className={styles.navigation}>
           {localContent.navigation.map(({ title, id }) => (
             <Text
+              title={true}
               text={title}
               className={styles.navigationText}
               key={id}

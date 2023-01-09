@@ -30,7 +30,7 @@ export const MobileMenu: FC<IProps> = ({ isOpen, callback, lang, setLang }) => {
         <Image src={logo} alt="logo" width={83} height={76} />
       </div>
       <div>
-        {localContent.header.map(({ title, id }) => (
+        {localContent.header.navigation.map(({ title, id }) => (
           <Text
             key={id}
             text={title}

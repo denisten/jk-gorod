@@ -1,15 +1,16 @@
 .container {
     display: flex;
-    height: 242px;
+    height: 100px;
     width: 100%;
     position: relative;
-    /*padding: 240px 0 0 100px;*/
+    padding-left: 100px;
 }
 
 .navigation {
     display: flex;
-    flex-direction: column;
-    margin-right: 200px;
+    background: #394426;
+    width: 100%;
+    align-items: center;
 }
 
 .navigationText {
@@ -19,7 +20,7 @@
     font-size: 24px;
     letter-spacing: 0.15em;
     color: #FFFFFF;
-    margin-bottom: 40px;
+    padding: 0 2rem;
 }
 
 .row {
@@ -61,6 +62,11 @@
     height: 100%;
     left: 0;
     background: #B28353;
+}
+
+.logo {
+    height: auto;
+    width: auto;
 }
 
 @media (max-width: 650px) {

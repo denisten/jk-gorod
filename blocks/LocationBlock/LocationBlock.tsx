@@ -7,6 +7,8 @@ import { Element } from "react-scroll";
 import { EBlocks, EFonts, ELang } from "../../types";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Button } from "../../components/Button";
+import Image from "next/image";
+import logoImg from "./logo.png";
 
 interface IProps {
   lang: ELang;
@@ -24,10 +26,15 @@ export const LocationBlock: FC<IProps> = ({ lang, openModal }) => {
       >
         <YMaps>
           <Map
-            defaultOptions={{ restrictMapArea: true, maxZoom: 15, minZoom: 15 }}
+            options={{
+              avoidFractionalZoom: true,
+              restrictMapArea: true,
+              maxZoom: 16,
+              minZoom: 16,
+            }}
             state={{
               center: [41.31277, 69.327743],
-              zoom: 15,
+              zoom: 16,
             }}
             className={styles.map}
           >
@@ -35,6 +42,7 @@ export const LocationBlock: FC<IProps> = ({ lang, openModal }) => {
               defaultGeometry={[41.31277, 69.327743]}
               geometry={[41.31277, 69.327743]}
             />
+            <Image src={logoImg} alt="logoImg" className={styles.mapIcon} />
           </Map>
         </YMaps>
         <div className={styles.infoContainer}>

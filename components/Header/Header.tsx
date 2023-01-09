@@ -18,9 +18,16 @@ interface IProps {
   isMenuOpen: boolean;
   lang: ELang;
   setLang: (lang: ELang) => void;
+  openModal: () => void;
 }
 
-export const Header: FC<IProps> = ({ isMenuOpen, callback, lang, setLang }) => {
+export const Header: FC<IProps> = ({
+  isMenuOpen,
+  callback,
+  lang,
+  setLang,
+  openModal,
+}) => {
   const localContent = content[lang].header;
   const isMobile = useIsMobile();
 
@@ -56,7 +63,7 @@ export const Header: FC<IProps> = ({ isMenuOpen, callback, lang, setLang }) => {
   return (
     <div className={cn(styles.container)} id="header-section">
       <div className={styles.navbar}>
-        {localContent.map(({ title, id }) => (
+        {localContent.navigation.map(({ title, id }) => (
           <Text
             onClick={() => {
               scroller.scrollTo(id, {
@@ -74,14 +81,15 @@ export const Header: FC<IProps> = ({ isMenuOpen, callback, lang, setLang }) => {
         ))}
       </div>
       <div className={styles.flex}>
-        {/*<div className={styles.phoneContainer}>*/}
-        {/*  <Text*/}
-        {/*    className={styles.phone}*/}
-        {/*    text="+998 90 123 45 67"*/}
-        {/*    fontSize="1.4vw"*/}
-        {/*  />*/}
-        {/*  <Image src={phoneImg} alt="phone" />*/}
-        {/*</div>*/}
+        <div className={styles.info}>
+          <Text text={localContent.phone} className={styles.phone} type="tel" />
+          <Text text={localContent.timetable} className={styles.infoContent} />
+          <Text
+            text={localContent.callText}
+            className={styles.infoContent}
+            onClick={openModal}
+          />
+        </div>
         <Image src={logoImg} alt="logo" className={styles.logo} />
       </div>
     </div>

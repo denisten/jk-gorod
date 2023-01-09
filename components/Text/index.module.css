@@ -1,7 +1,8 @@
 .container {
     font-family: Austin;
-    font-size: 1rem;
+    font-size: 1.2rem;
     z-index: 10;
+    line-height: 2rem;
 }
 
 .kazimir {
@@ -9,5 +10,20 @@
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    .container {
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
 }

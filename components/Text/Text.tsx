@@ -45,6 +45,7 @@ export const Text: FC<IProps> = ({
       className={cn(className, styles.container, {
         [styles.kazimir]: fontFamily === EFonts.KAZIMIR,
         [styles.title]: title,
+        [styles.clickable]: onClick,
       })}
       style={{ fontSize, fontWeight }}
       onClick={onClick}

@@ -19,6 +19,8 @@
     text-align: justify;
     color: #ffffff;
     font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -31,7 +33,6 @@
     position: relative;
     right: 2%;
     top: 45%;
-    /*width: 380px;*/
     padding: 18px 0;
 }
 

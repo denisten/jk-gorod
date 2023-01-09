@@ -20,6 +20,7 @@
 
 .flex {
     display: flex;
+    align-items: center;
 }
 
 .navbar {
@@ -48,9 +49,8 @@
 }
 
 .phone {
-    margin-right: 16px;
     white-space: pre;
-    /*font-size: ;*/
+    text-align: right;
 }
 
 .mobileContainer {
@@ -69,4 +69,17 @@
 .logo {
     width: 65px;
     height: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    margin-right: 1rem;
+}
+
+.infoContent {
+    font-size: 0.8rem;
+    line-height: 1.4rem !important;
+    text-align: right;
 }

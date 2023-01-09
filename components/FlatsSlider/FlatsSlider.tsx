@@ -32,10 +32,10 @@ export const FlatsSlider: React.FC<IProps> = ({ flats, lang }) => {
           clickable: true,
         }}
         navigation={true}
-        // autoplay={{
-        //   delay: 1500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         modules={[Autoplay, Navigation, Pagination]}
         className={styles.swiper}
         allowTouchMove={true}
