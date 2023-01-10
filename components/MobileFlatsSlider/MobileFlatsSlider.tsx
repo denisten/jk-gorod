@@ -30,14 +30,13 @@ export const MobileFlatsSlider: React.FC<IProps> = ({ flats, lang }) => {
           clickable: true,
         }}
         navigation={true}
-        // autoplay={{
-        //   delay: 1500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         modules={[Autoplay, Navigation, Pagination]}
         className={styles.swiper}
         allowTouchMove={true}
-        // onSlideChange={(e) => setImgId(e.activeIndex)}
       >
         {flats.map((flat) => (
           <SwiperSlide className={styles.slide} key={flat.id}>
@@ -65,8 +64,8 @@ export const MobileFlatsSlider: React.FC<IProps> = ({ flats, lang }) => {
                 </div>
               </div>
               <ol className={styles.flatOl}>
-                {flat.rooms.map((room) => (
-                  <li key={room.title}>
+                {flat.rooms.map((room, id) => (
+                  <li key={room.title + id}>
                     <div className={styles.row}>
                       <Text
                         //@ts-ignore

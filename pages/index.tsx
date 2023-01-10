@@ -51,11 +51,12 @@ export default function Home() {
         setLang={setLang}
         openModal={openModal}
       />
-      <WelcomeBlock lang={lang} openModal={openModal} />
+      <WelcomeBlock lang={lang} />
       <AboutBlock lang={lang} openModal={openModal} />
       <LocationInfoBlock lang={lang} />
-      {isMobile ? <ChessBlockMobile lang={lang} /> : <ChessBlock lang={lang} />}
       <RoomSliderBlock lang={lang} />
+
+      {isMobile ? <ChessBlockMobile lang={lang} /> : <ChessBlock lang={lang} />}
       {isMobile ? (
         <AdvantagesMobileBlock lang={lang} />
       ) : (

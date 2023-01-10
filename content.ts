@@ -2,13 +2,9 @@ import constructionImg from "./images/chessBlock/construction.png";
 import noCarsInsideImg from "./images/chessBlock/noCarsInside.png";
 import constructionMobileImg from "./images/chessBlockMobile/construction.png";
 import noCarsInsideMobileImg from "./images/chessBlockMobile/noCarsInside.png";
-import phoneSVG from "./images/locationBlock/phone.svg";
-import websiteSVG from "./images/locationBlock/website.svg";
-import mailSVG from "./images/locationBlock/mail.svg";
 import advantageImg1 from "./images/advantagesBlock/1.png";
 import advantageImg2 from "./images/advantagesBlock/2.png";
 import advantageImg3 from "./images/advantagesBlock/3.png";
-import telegramSVG from "./images/locationBlock/telegram.svg";
 import welcome1 from "./images/welcomeBlock/background.webp";
 import welcomeMobileBackground from "./images/welcomeBlock/backgroundMobile.webp";
 import welcome2 from "./images/welcomeBlock/2.png";
@@ -37,6 +33,7 @@ import gallery3 from "./images/galleryBlock/3.png";
 // import gallery21 from "./images/galleryBlock/21.png";
 // import gallery22 from "./images/galleryBlock/22.png";
 import { EBlocks } from "./types";
+
 export const content = {
   uzb: {
     squareMeasurementUnit: "кв.м",
@@ -63,25 +60,20 @@ export const content = {
     },
     header: {
       navigation: [
-        { title: "О комплексе", id: EBlocks.ABOUT },
-        { title: "Преимущества", id: EBlocks.CHESS },
-        { title: "Блоки", id: EBlocks.ROOM_SELECTOR },
-        { title: "Галерея", id: EBlocks.GALLERY },
-        { title: "Локация", id: EBlocks.LOCATION },
+        { title: "Kompleks haqida", id: EBlocks.ABOUT },
+        { title: "Foyda", id: EBlocks.CHESS },
+        { title: "Bloklar", id: EBlocks.ROOM_SELECTOR },
+        { title: "Galereya", id: EBlocks.GALLERY },
+        { title: "Manzil", id: EBlocks.LOCATION },
       ],
       phone: "+998 97 3359999",
+      extraPhone: "+998 98 3359999",
       timetable: "Ежедневно с 9:00 до 20:00",
-      callText: "Заказать звонок",
     },
     welcomeBlock: {
       background: [welcome1, welcome2, welcome3, welcome4],
       mobileBackground: [welcomeMobileBackground],
-      description:
-        "Выберите свой крепкий дом для крепкой семьи в одном из 8 блоков жилого комплекса",
-      button: "Оставить заявку",
-      title: "GOROD!",
-      mobileTitle: "GOROD",
-      mobileDescription: "Крепкий дом для крепкой семьи",
+      description: "GOROD!- крепкий дом для крепкой семьи.",
       menu: "МЕНЮ",
     },
     aboutBlock: {
@@ -181,17 +173,13 @@ export const content = {
     buildingStepsBlock: {
       title: "ХОД СТРОИТЕЛЬСТВА",
     },
+
     locationBlock: {
       title: "ОФИС ПРОДАЖ",
-      address: "Ташкент, Яшнабадский р-н, Мавлоно Ризови, 2",
-      phoneImg: phoneSVG,
+      address: "Ташкент, Яшнабадский р-н, Мавлоно Риёзий 2",
       phone: "+998 97 3359999",
-      mailImg: mailSVG,
+      extraPhone: "+998 98 3359999",
       mail: "jkgorod@gmail.com",
-      websiteImg: websiteSVG,
-      website: "www.website.uz",
-      telegramImg: telegramSVG,
-      telegram: "@telegram",
       buttonText: "Записаться на встречу",
     },
     footerBlock: {
@@ -236,18 +224,13 @@ export const content = {
         { title: "Локация", id: EBlocks.LOCATION },
       ],
       phone: "+998 97 3359999",
+      extraPhone: "+998 98 3359999",
       timetable: "Ежедневно с 9:00 до 20:00",
-      callText: "Заказать звонок",
     },
     welcomeBlock: {
       background: [welcome1, welcome2, welcome3, welcome4],
-      mobileBackground: [welcomeMobileBackground],
-      description:
-        "Выберите свой крепкий дом для крепкой семьи в одном из 8 блоков жилого комплекса",
-      button: "Оставить заявку",
-      title: "GOROD!",
-      mobileTitle: "GOROD",
-      mobileDescription: "Крепкий дом для крепкой семьи",
+      mobileBackground: [welcome1, welcome2, welcome3, welcome4],
+      description: "GOROD!- крепкий дом для крепкой семьи.",
       menu: "МЕНЮ",
     },
     aboutBlock: {
@@ -349,21 +332,17 @@ export const content = {
     },
     locationBlock: {
       title: "ОФИС ПРОДАЖ",
-      address: "Ташкент, Яшнабадский р-н, Мавлоно Ризови, 2",
-      phoneImg: phoneSVG,
+      address: "Ташкент, Яшнабадский р-н, Мавлоно Риёзий 2",
       phone: "+998 97 3359999",
-      mailImg: mailSVG,
+      extraPhone: "+998 98 3359999",
       mail: "jkgorod@gmail.com",
-      websiteImg: websiteSVG,
-      website: "www.website.uz",
-      telegramImg: telegramSVG,
-      telegram: "@telegram",
       buttonText: "Записаться на встречу",
     },
     footerBlock: {
       navigation: [
-        { title: "О комплексе", id: EBlocks.WELCOME },
-        { title: "Преимущества", id: EBlocks.ADVANTAGES },
+        { title: "Главная", id: EBlocks.WELCOME },
+        { title: "О комплексе", id: EBlocks.ABOUT },
+        { title: "Преимущества", id: EBlocks.CHESS },
         { title: "Блоки", id: EBlocks.ROOM_SELECTOR },
         { title: "Галерея", id: EBlocks.GALLERY },
       ],

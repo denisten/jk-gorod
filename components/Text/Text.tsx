@@ -27,7 +27,7 @@ export const Text: FC<IProps> = ({
 }) => {
   if (type === "tel" || type === "mail") {
     const href =
-      (type === "tel" ? "tel:" : "mailto:") + text.replaceAll(" ", "");
+      (type === "tel" ? "tel:" : "mailto:") + text?.replace(/ /g, "");
     return (
       <a
         className={cn(className, styles.container, {

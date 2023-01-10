@@ -33,14 +33,14 @@ export const LocationBlock: FC<IProps> = ({ lang, openModal }) => {
               minZoom: 16,
             }}
             state={{
-              center: [41.31277, 69.327743],
+              center: [41.313474, 69.320942],
               zoom: 16,
             }}
             className={styles.map}
           >
             <Placemark
-              defaultGeometry={[41.31277, 69.327743]}
-              geometry={[41.31277, 69.327743]}
+              defaultGeometry={[41.313474, 69.320942]}
+              geometry={[41.313474, 69.320942]}
             />
             <Image src={logoImg} alt="logoImg" className={styles.mapIcon} />
           </Map>
@@ -55,6 +55,13 @@ export const LocationBlock: FC<IProps> = ({ lang, openModal }) => {
               <Text
                 type="tel"
                 text={localContent.phone}
+                className={styles.infoText}
+              />
+            </div>
+            <div className={styles.row}>
+              <Text
+                type="tel"
+                text={localContent.extraPhone}
                 className={styles.infoText}
               />
             </div>

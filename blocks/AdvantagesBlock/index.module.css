@@ -1,9 +1,15 @@
-.container {}
+.container {
+    padding-top: 5rem;
+}
 
 .row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
 }
 
 .reversed {

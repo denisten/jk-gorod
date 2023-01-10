@@ -18,6 +18,7 @@ export const AdvantagesMobileBlock: React.FC<IProps> = ({ lang }) => {
         <ScrollAnimation
           animateIn={`animate__fadeIn${id % 2 == 0 ? "Right" : "Left"}Big`}
           animateOnce={true}
+          key={advantage.title + id}
         >
           <div className={styles.advantageContainer}>
             <Text text={advantage.title} className={styles.title} title />

@@ -27,7 +27,7 @@ export const LocationMobileBlock: FC<IProps> = ({ lang }) => {
               minZoom: 16,
             }}
             state={{
-              center: [41.312624, 69.329985],
+              center: [41.313474, 69.320942],
               zoom: 16,
             }}
             className={styles.map}
@@ -46,6 +46,9 @@ export const LocationMobileBlock: FC<IProps> = ({ lang }) => {
           </div>
           <div className={styles.row}>
             <Text text={localContent.phone} className={styles.infoText} />
+          </div>
+          <div className={styles.row}>
+            <Text text={localContent.extraPhone} className={styles.infoText} />
           </div>
           <div className={styles.row}>
             <Text text={localContent.mail} className={styles.infoText} />

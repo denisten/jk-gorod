@@ -44,10 +44,10 @@ export const GalleryBlock: FC<IProps> = ({ lang }) => {
           {images.map((image, id) => (
             <SwiperSlide className={cn(styles.swiperSlide)} key={id}>
               <Image
-                fill
                 src={image}
                 alt="apartment img"
                 className={styles.image}
+                fill
               />
             </SwiperSlide>
           ))}

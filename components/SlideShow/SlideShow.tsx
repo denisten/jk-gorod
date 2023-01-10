@@ -16,7 +16,7 @@ export const SlideShow: FC<IProps> = ({ images }) => {
         {images.map((img, index) => {
           return (
             <div key={index} className={cn("each-fade", styles.slide)}>
-              <Image alt={index.toString()} src={img.src} fill />
+              <Image alt={index.toString()} src={img} className={styles.img} />
             </div>
           );
         })}

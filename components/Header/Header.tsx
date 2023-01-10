@@ -1,6 +1,5 @@
 import React, { FC, useEffect } from "react";
 import styles from "./index.module.css";
-// import phoneImg from "./phone.svg";
 import logoImg from "./logo.png";
 import Image from "next/image";
 import cn from "classnames";
@@ -8,7 +7,7 @@ import { Text } from "../Text";
 import { EFonts, ELang } from "../../types";
 import { useIsMobile } from "../../utils/getIsMobile";
 import menu from "./menu.svg";
-import { Events, scroller } from "react-scroll";
+import { scroller } from "react-scroll";
 import { content } from "../../content";
 import { MobileMenu } from "../MobileMenu";
 
@@ -81,16 +80,37 @@ export const Header: FC<IProps> = ({
         ))}
       </div>
       <div className={styles.flex}>
-        <div className={styles.info}>
-          <Text text={localContent.phone} className={styles.phone} type="tel" />
-          <Text text={localContent.timetable} className={styles.infoContent} />
+        <div className={styles.languageContainer}>
           <Text
-            text={localContent.callText}
-            className={styles.infoContent}
-            onClick={openModal}
+            text={"Ру"}
+            className={cn(styles.language, {
+              [styles.selectedLang]: lang === ELang.RUS,
+            })}
+            onClick={() => setLang(ELang.RUS)}
+          />
+          <Text
+            text={"Uz"}
+            className={cn(styles.language, {
+              [styles.selectedLang]: lang === ELang.UZB,
+            })}
+            onClick={() => setLang(ELang.UZB)}
           />
         </div>
-        <Image src={logoImg} alt="logo" className={styles.logo} />
+        <div className={styles.info}>
+          <Text text={localContent.phone} className={styles.phone} type="tel" />
+          <Text
+            text={localContent.extraPhone}
+            className={styles.phone}
+            type="tel"
+          />
+          <Text text={localContent.timetable} className={styles.infoContent} />
+        </div>
+        <Image
+          src={logoImg}
+          alt="logo"
+          className={styles.logo}
+          priority={true}
+        />
       </div>
     </div>
   );

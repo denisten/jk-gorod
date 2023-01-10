@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    padding: 0.5rem 100px;
+    padding: 0.5rem 2rem 0.5rem 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,6 +51,7 @@
 .phone {
     white-space: pre;
     text-align: right;
+    line-height: 1.4rem !important;
 }
 
 .mobileContainer {
@@ -82,4 +83,17 @@
     font-size: 0.8rem;
     line-height: 1.4rem !important;
     text-align: right;
+}
+
+.languageContainer {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.language {
+    padding: 0 5px;
+}
+
+.selectedLang {
+    color: #B28353;
 }

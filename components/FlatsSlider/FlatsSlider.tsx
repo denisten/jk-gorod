@@ -39,7 +39,6 @@ export const FlatsSlider: React.FC<IProps> = ({ flats, lang }) => {
         modules={[Autoplay, Navigation, Pagination]}
         className={styles.swiper}
         allowTouchMove={true}
-        // onSlideChange={(e) => setImgId(e.activeIndex)}
       >
         {flats.map((flat) => (
           <SwiperSlide className={styles.swiperSlide} key={flat.id}>
