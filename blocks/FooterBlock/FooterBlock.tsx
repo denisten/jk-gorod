@@ -16,7 +16,7 @@ interface IProps {
 export const FooterBlock: FC<IProps> = ({ lang }) => {
   const localContent = content[lang].footerBlock;
   const isMobile = useIsMobile();
-  if (isMobile) return null;
+  // if (isMobile) return null;
   return (
     <Element name={EBlocks.FOOTER} className={styles.container}>
       <div className={styles.left} />

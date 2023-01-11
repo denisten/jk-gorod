@@ -51,7 +51,7 @@ export default function Home() {
         setLang={setLang}
         openModal={openModal}
       />
-      <WelcomeBlock lang={lang} />
+      <WelcomeBlock lang={lang} openModal={openModal} />
       <AboutBlock lang={lang} openModal={openModal} />
       <LocationInfoBlock lang={lang} />
       <RoomSliderBlock lang={lang} />

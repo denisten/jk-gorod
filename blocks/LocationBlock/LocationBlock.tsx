@@ -33,7 +33,7 @@ export const LocationBlock: FC<IProps> = ({ lang, openModal }) => {
               minZoom: 16,
             }}
             state={{
-              center: [41.313474, 69.320942],
+              center: [41.313725, 69.320305],
               zoom: 16,
             }}
             className={styles.map}

@@ -27,7 +27,8 @@ export const LocationMobileBlock: FC<IProps> = ({ lang }) => {
               minZoom: 16,
             }}
             state={{
-              center: [41.313474, 69.320942],
+              // center: [41.313725, 69.320305],
+              center: [41.313074, 69.322074],
               zoom: 16,
             }}
             className={styles.map}

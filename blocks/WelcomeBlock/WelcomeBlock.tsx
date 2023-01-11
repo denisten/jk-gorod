@@ -10,20 +10,24 @@ import { MobileSlideShow } from "../../components/MobileSlideShow";
 
 interface IProps {
   lang: ELang;
+  openModal: () => void;
 }
 
-export const WelcomeBlock: FC<IProps> = ({ lang }) => {
+export const WelcomeBlock: FC<IProps> = ({ lang, openModal }) => {
   const isMobile = useIsMobile();
   const localContent = content[lang].welcomeBlock;
   return (
     <Element name={EBlocks.WELCOME} className={styles.container}>
       {isMobile ? (
-        <MobileSlideShow images={localContent.mobileBackground} />
+        <MobileSlideShow images={localContent.background} />
       ) : (
         <SlideShow images={localContent.background} />
       )}
       <div className={styles.contentContainer}>
         <Text text={localContent.description} className={styles.content} />
+        <div className={styles.button} onClick={openModal}>
+          <Text text={localContent.button} className={styles.buttonText} />
+        </div>
       </div>
     </Element>
   );

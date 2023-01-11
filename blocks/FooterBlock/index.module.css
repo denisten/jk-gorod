@@ -71,26 +71,34 @@
 
 @media (max-width: 650px) {
     .container {
-        height: auto;
-        padding: 60px 0 0 30px;
+        height: 40px;
+        width: 100%;
+        padding-left: 0;
+        background: #394426;
+        /*height: auto;*/
+        /*padding: 60px 0 0 30px;*/
     }
 
-    .icon {
-        width: 32px;
-        height: 32px;
-    }
-
-    .contactText {
-        font-size: 14px;
+    .navigationText {
+        font-size: 1rem;
+        padding: 0 0.5rem;
     }
 
     .navigation {
         margin: 0;
     }
 
-    .image {
-        height: 200px;
-        right: 0%;
+    .logo {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        height: 40px;
+    }
+
+    .left {
+        z-index: 19;
+        /*display: none;*/
+        width: 20px;
     }
 
 }
