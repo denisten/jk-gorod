@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import styles from "./index.module.css";
 import { Text } from "../../components/Text";
 import { content } from "../../content";
-import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
+import { Map, YMaps } from "@pbe/react-yandex-maps";
 import { Element } from "react-scroll";
 import { EBlocks, EFonts, ELang } from "../../types";
 import ScrollAnimation from "react-animate-on-scroll";

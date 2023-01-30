@@ -14,7 +14,12 @@ export const ContactMobileBlock: React.FC<IProps> = ({ lang, openModal }) => {
   const localContent = content[lang].locationBlock;
   return (
     <div className={styles.container}>
-      <Text text={localContent.title} className={styles.title} title />
+      <Text
+        text={localContent.title}
+        className={styles.title}
+        title
+        fontSize="1.8rem"
+      />
       <div className={styles.row}>
         <Text text={localContent.address} className={styles.infoText} />
       </div>
@@ -43,6 +48,7 @@ export const ContactMobileBlock: React.FC<IProps> = ({ lang, openModal }) => {
         text={localContent.buttonText}
         fontFamily={EFonts.Austin}
         onClick={openModal}
+        className={styles.button}
       />
     </div>
   );

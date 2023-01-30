@@ -1,17 +1,13 @@
-import React, { FC } from "react";
+import React from "react";
 import styles from "./index.module.css";
 import { Map, YMaps } from "@pbe/react-yandex-maps";
 import { Element } from "react-scroll";
-import { EBlocks, ELang } from "../../types";
+import { EBlocks } from "../../types";
 import ScrollAnimation from "react-animate-on-scroll";
 import Image from "next/image";
 import logoImg from "../LocationBlock/logo.png";
 
-interface IProps {
-  lang: ELang;
-}
-
-export const LocationMobileBlock: FC<IProps> = ({ lang }) => {
+export const LocationMobileBlock = () => {
   return (
     <Element name={EBlocks.LOCATION} className={styles.container}>
       <ScrollAnimation animateIn="animate__zoomIn" animateOnce={true}>

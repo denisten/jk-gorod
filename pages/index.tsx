@@ -65,7 +65,7 @@ export default function Home() {
       )}
       <GalleryBlock lang={lang} />
       {isMobile ? (
-        <LocationMobileBlock lang={lang} />
+        <LocationMobileBlock />
       ) : (
         <LocationBlock lang={lang} openModal={openModal} />
       )}

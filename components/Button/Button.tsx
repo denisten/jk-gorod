@@ -10,7 +10,6 @@ interface IProps {
   textClassName?: string;
   fontFamily: EFonts;
   onClick: () => void;
-  // fontSize: string;
   title?: boolean;
 }
 
