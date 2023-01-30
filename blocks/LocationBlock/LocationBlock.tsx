@@ -38,10 +38,6 @@ export const LocationBlock: FC<IProps> = ({ lang, openModal }) => {
             }}
             className={styles.map}
           >
-            <Placemark
-              defaultGeometry={[41.313474, 69.320942]}
-              geometry={[41.313474, 69.320942]}
-            />
             <Image src={logoImg} alt="logoImg" className={styles.mapIcon} />
           </Map>
         </YMaps>

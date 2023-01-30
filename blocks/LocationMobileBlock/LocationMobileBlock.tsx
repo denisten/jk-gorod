@@ -1,8 +1,6 @@
 import React, { FC } from "react";
 import styles from "./index.module.css";
-import { Text } from "../../components/Text";
-import { content } from "../../content";
-import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
+import { Map, YMaps } from "@pbe/react-yandex-maps";
 import { Element } from "react-scroll";
 import { EBlocks, ELang } from "../../types";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -14,7 +12,6 @@ interface IProps {
 }
 
 export const LocationMobileBlock: FC<IProps> = ({ lang }) => {
-  const localContent = content[lang].locationBlock;
   return (
     <Element name={EBlocks.LOCATION} className={styles.container}>
       <ScrollAnimation animateIn="animate__zoomIn" animateOnce={true}>
@@ -27,34 +24,14 @@ export const LocationMobileBlock: FC<IProps> = ({ lang }) => {
               minZoom: 16,
             }}
             state={{
-              // center: [41.313725, 69.320305],
-              center: [41.313074, 69.322074],
+              center: [41.313725, 69.320305],
               zoom: 16,
             }}
             className={styles.map}
           >
-            <Placemark
-              defaultGeometry={[41.31277, 69.327743]}
-              geometry={[41.31277, 69.327743]}
-            />
             <Image src={logoImg} alt="logoImg" className={styles.mapIcon} />
           </Map>
         </YMaps>
-        <div className={styles.info}>
-          <Text text={localContent.title} className={styles.title} title />
-          <div className={styles.row}>
-            <Text text={localContent.address} className={styles.infoText} />
-          </div>
-          <div className={styles.row}>
-            <Text text={localContent.phone} className={styles.infoText} />
-          </div>
-          <div className={styles.row}>
-            <Text text={localContent.extraPhone} className={styles.infoText} />
-          </div>
-          <div className={styles.row}>
-            <Text text={localContent.mail} className={styles.infoText} />
-          </div>
-        </div>
       </ScrollAnimation>
     </Element>
   );

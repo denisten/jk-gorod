@@ -1,37 +1,18 @@
-import constructionImg from "./images/chessBlock/construction.png";
-import noCarsInsideImg from "./images/chessBlock/noCarsInside.png";
-import constructionMobileImg from "./images/chessBlockMobile/construction.png";
-import noCarsInsideMobileImg from "./images/chessBlockMobile/noCarsInside.png";
+import chessImg1 from "./images/chessBlock/1.jpg";
+import chessImg2 from "./images/chessBlock/2.jpg";
 import advantageImg1 from "./images/advantagesBlock/1.png";
 import advantageImg2 from "./images/advantagesBlock/2.png";
 import advantageImg3 from "./images/advantagesBlock/3.png";
-import welcome1 from "./images/welcomeBlock/background.webp";
-import welcomeMobileBackground from "./images/welcomeBlock/backgroundMobile.webp";
-import welcome2 from "./images/welcomeBlock/2.png";
-import welcome3 from "./images/welcomeBlock/3.png";
-import welcome4 from "./images/welcomeBlock/4.png";
-import gallery1 from "./images/galleryBlock/1.png";
-import gallery2 from "./images/galleryBlock/2.png";
-import gallery3 from "./images/galleryBlock/3.png";
-// import gallery4 from "./images/galleryBlock/4.png";
-// import gallery5 from "./images/galleryBlock/5.png";
-// import gallery6 from "./images/galleryBlock/6.png";
-// import gallery7 from "./images/galleryBlock/7.png";
-// import gallery8 from "./images/galleryBlock/8.png";
-// import gallery9 from "./images/galleryBlock/9.png";
-// import gallery10 from "./images/galleryBlock/10.png";
-// import gallery11 from "./images/galleryBlock/11.png";
-// import gallery12 from "./images/galleryBlock/12.png";
-// import gallery13 from "./images/galleryBlock/13.png";
-// import gallery14 from "./images/galleryBlock/14.png";
-// import gallery15 from "./images/galleryBlock/15.png";
-// import gallery16 from "./images/galleryBlock/16.png";
-// import gallery17 from "./images/galleryBlock/17.png";
-// import gallery18 from "./images/galleryBlock/18.png";
-// import gallery19 from "./images/galleryBlock/19.png";
-// import gallery20 from "./images/galleryBlock/20.png";
-// import gallery21 from "./images/galleryBlock/21.png";
-// import gallery22 from "./images/galleryBlock/22.png";
+import welcome1 from "./images/welcomeBlock/1.jpg";
+import welcome2 from "./images/welcomeBlock/2.jpg";
+import welcome3 from "./images/welcomeBlock/3.jpg";
+import welcome4 from "./images/welcomeBlock/4.jpg";
+import welcome5 from "./images/welcomeBlock/5.jpg";
+import gallery1 from "./images/galleryBlock/1.jpg";
+import gallery2 from "./images/galleryBlock/2.jpg";
+import gallery3 from "./images/galleryBlock/3.jpg";
+import gallery4 from "./images/galleryBlock/4.jpg";
+import gallery5 from "./images/galleryBlock/5.jpg";
 import { EBlocks } from "./types";
 
 export const content = {
@@ -70,8 +51,8 @@ export const content = {
       timetable: "Har kuni soat 9:00 dan 20: 00 gacha",
     },
     welcomeBlock: {
-      background: [welcome1, welcome2, welcome3, welcome4],
-      description: "GOROD - kuchli oila uchun mustahkam uy.",
+      background: [welcome1, welcome2, welcome3, welcome4, welcome5],
+      description: "GOROD - mustahkam oila uchun mustahkam uy",
       menu: "Menyu",
       button: "Ariza qoldiring",
     },
@@ -81,8 +62,8 @@ export const content = {
         "Mirador Group tomonidan ishlab chiqarilgan GOROD - bu poytaxtning nufuzli tumanida joylashgan zamonaviy biznes-klass turar-joy majmuasi.\n" +
         "TJ hududida keng terassali va balkonli 6, 8 va 10 qavatli turar-joy binolari mavjud. Kvartiralar 46 dan 149 kvadrat metrgacha maydonga ega",
       advantages: [
-        { title: "Tartiblar", count: "21" },
-        { title: "Mashinalar joylari", count: "325" },
+        { title: "Planirovkalar", count: "21" },
+        { title: "Avtoturargohlar", count: "325" },
         { title: "Kvartiralar", count: "413" },
       ],
       button: "Batafsil",
@@ -116,22 +97,22 @@ export const content = {
           description:
             "Uylarimizni qurish uchun monolit ustunli murvat tizimi har qanday tartibni bajarishga imkon beradi" +
             "kvartiralar va kuygan g'isht devorlari butun yil davomida sizning kvartirangizda yuqori darajadagi ovoz yalıtımı va qulay mikroiqlimni ta'minlaydi.",
-          img: constructionImg,
-          mobileImg: constructionMobileImg,
+          img: chessImg1,
+          mobileImg: chessImg1,
         },
         {
           title: "Mashinasiz hovli",
           description:
-            "Er osti avtoturargohi sizning mashinangizni joylashtirish haqida tashvishlanmaslikka imkon beradi va ko'p funktsiyali o'yin maydonchalari bo'lgan shinam yashil hovlilarda bolalar bilan yurish uchun qulay va xavfsiz joyni ta'minlaydi.",
-          img: noCarsInsideImg,
-          mobileImg: noCarsInsideMobileImg,
+            "Yer osti avtoturargohi sizning mashinangizni joylashtirish haqida tashvishlanmaslikka imkon beradi va ko'p funktsiyali o'yin maydonchalari bo'lgan shinam yashil hovlilarda bolalar bilan yurish uchun qulay va xavfsiz joyni ta'minlaydi.",
+          img: chessImg2,
+          mobileImg: chessImg2,
         },
       ],
     },
     flatsSlider: {
       block: "Blok",
       title: "BLOKLAR VA TARTIB",
-      flatsCount: "yopiq",
+      flatsCount: "xonali",
       roomCountText: "Xonalar soni",
       schemaTitle: "Mavjud tartiblar",
       schemaTitleMobile: "Tartiblar",
@@ -143,30 +124,7 @@ export const content = {
     },
     galleryBlock: {
       title: "Galereya",
-      images: [
-        gallery1,
-        gallery2,
-        gallery3,
-        // gallery4,
-        // gallery5,
-        // gallery6,
-        // gallery7,
-        // gallery8,
-        // gallery9,
-        // gallery10,
-        // gallery11,
-        // gallery12,
-        // gallery13,
-        // gallery14,
-        // gallery15,
-        // gallery16,
-        // gallery17,
-        // gallery18,
-        // gallery19,
-        // gallery20,
-        // gallery21,
-        // gallery22,
-      ],
+      images: [gallery1, gallery2, gallery3, gallery4, gallery5],
     },
     buildingStepsBlock: {
       title: "QURILISH JARAYONI",
@@ -175,9 +133,10 @@ export const content = {
     locationBlock: {
       title: "SAVDO IDORASI",
       address: "Toshkent, Yashnobod tumani, Mavlono Riyoziy 2",
+      shortAddress: "Mavlono Riyoziy 2",
       phone: "+998 97 3359999",
       extraPhone: "+998 98 3359999",
-      mail: "jkgorod@gmail.com",
+      mail: "info@jkgorod.uz",
       buttonText: "Uchrashuvga yoziling",
     },
     footerBlock: {
@@ -226,8 +185,8 @@ export const content = {
       timetable: "Ежедневно с 9:00 до 20:00",
     },
     welcomeBlock: {
-      background: [welcome1, welcome2, welcome3, welcome4],
-      description: "GOROD - крепкий дом для крепкой семьи.",
+      background: [welcome1, welcome2, welcome3, welcome4, welcome5],
+      description: "GOROD - крепкий дом для крепкой семьи",
       menu: "МЕНЮ",
       button: "Оставить заявку",
     },
@@ -273,15 +232,15 @@ export const content = {
           description:
             "Монолитная колонно-ригельная система строительства наших домов позволяет выполнить любую планировку" +
             " квартиры, а стены из жженого кирпича обеспечат высокий уровень шумоизоляции и комфортный микроклимат в вашей квартире круглый год.",
-          img: constructionImg,
-          mobileImg: constructionMobileImg,
+          img: chessImg1,
+          mobileImg: chessImg1,
         },
         {
           title: "Двор без машин",
           description:
             "Подземный паркинг позволит не переживать за размещение вашего авто и обеспечит комфортную и безопасную зону для прогулок с детьми в уютных зеленых дворах с многофункциональными игровыми площадками.",
-          img: noCarsInsideImg,
-          mobileImg: noCarsInsideMobileImg,
+          img: chessImg2,
+          mobileImg: chessImg2,
         },
       ],
     },
@@ -300,30 +259,7 @@ export const content = {
     },
     galleryBlock: {
       title: "ГАЛЕРЕЯ",
-      images: [
-        gallery1,
-        gallery2,
-        gallery3,
-        // gallery4,
-        // gallery5,
-        // gallery6,
-        // gallery7,
-        // gallery8,
-        // gallery9,
-        // gallery10,
-        // gallery11,
-        // gallery12,
-        // gallery13,
-        // gallery14,
-        // gallery15,
-        // gallery16,
-        // gallery17,
-        // gallery18,
-        // gallery19,
-        // gallery20,
-        // gallery21,
-        // gallery22,
-      ],
+      images: [gallery1, gallery2, gallery3, gallery4, gallery5],
     },
     buildingStepsBlock: {
       title: "ХОД СТРОИТЕЛЬСТВА",
@@ -331,9 +267,10 @@ export const content = {
     locationBlock: {
       title: "ОФИС ПРОДАЖ",
       address: "Ташкент, Яшнабадский р-н, Мавлоно Риёзий 2",
+      shortAddress: "Мавлоно Риёзий 2",
       phone: "+998 97 3359999",
       extraPhone: "+998 98 3359999",
-      mail: "jkgorod@gmail.com",
+      mail: "info@jkgorod.uz",
       buttonText: "Записаться на встречу",
     },
     footerBlock: {

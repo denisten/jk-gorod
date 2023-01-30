@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Text } from "../../components/Text";
 import cn from "classnames";
 import ScrollAnimation from "react-animate-on-scroll";
-import { useIsMobile } from "../../utils/getIsMobile";
 
 interface IProps {
   lang: ELang;
@@ -14,7 +13,6 @@ interface IProps {
 
 export const AdvantagesBlock: FC<IProps> = ({ lang }) => {
   const localContent = content[lang].advantagesBlock;
-  const isMobile = useIsMobile();
   return (
     <div className={styles.container}>
       {localContent.map((row, id) => (

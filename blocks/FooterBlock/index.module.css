@@ -75,8 +75,6 @@
         width: 100%;
         padding-left: 0;
         background: #394426;
-        /*height: auto;*/
-        /*padding: 60px 0 0 30px;*/
     }
 
     .navigationText {
@@ -97,7 +95,6 @@
 
     .left {
         z-index: 19;
-        /*display: none;*/
         width: 20px;
     }
 

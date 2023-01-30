@@ -27,6 +27,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { LocationMobileBlock } from "../blocks/LocationMobileBlock";
 import { FooterBlock } from "../blocks/FooterBlock";
+import { ContactMobileBlock } from "../blocks/ContactMobileBlock";
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -68,6 +69,9 @@ export default function Home() {
       ) : (
         <LocationBlock lang={lang} openModal={openModal} />
       )}
+      {isMobile ? (
+        <ContactMobileBlock openModal={openModal} lang={lang} />
+      ) : null}
       <FooterBlock lang={lang} />
       <CallMeModal
         lang={lang}
