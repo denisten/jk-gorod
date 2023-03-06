@@ -4,7 +4,7 @@ import logoImg from "./logo.png";
 import Image from "next/image";
 import cn from "classnames";
 import { Text } from "../Text";
-import { EFonts, ELang } from "../../types";
+import { EBlocks, EFonts, ELang } from "../../types";
 import { useIsMobile } from "../../utils/getIsMobile";
 import menu from "./menu.svg";
 import { scroller } from "react-scroll";
@@ -97,6 +97,11 @@ export const Header: FC<IProps> = ({
           />
         </div>
         <div className={styles.info}>
+          <Text
+            text={localContent.mainPhone}
+            className={styles.phone}
+            type="tel"
+          />
           <Text text={localContent.phone} className={styles.phone} type="tel" />
           <Text
             text={localContent.extraPhone}
@@ -110,6 +115,14 @@ export const Header: FC<IProps> = ({
           alt="logo"
           className={styles.logo}
           priority={true}
+          onClick={() =>
+            scroller.scrollTo(EBlocks.WELCOME, {
+              duration: 500,
+              delay: 100,
+              smooth: true,
+              offset: -40,
+            })
+          }
         />
       </div>
     </div>

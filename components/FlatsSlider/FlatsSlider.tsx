@@ -33,7 +33,7 @@ export const FlatsSlider: React.FC<IProps> = ({ flats, lang }) => {
         }}
         navigation={true}
         autoplay={{
-          delay: 3000,
+          delay: 10000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Navigation, Pagination]}

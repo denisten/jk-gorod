@@ -47,6 +47,7 @@ export const content = {
         { title: "Manzil", id: EBlocks.LOCATION },
       ],
       phone: "+998 97 3359999",
+      mainPhone: "+998 78 7776666",
       extraPhone: "+998 98 3359999",
       timetable: "Har kuni soat 9:00 dan 20: 00 gacha",
     },
@@ -60,7 +61,7 @@ export const content = {
       title: "Kompleks haqida",
       description:
         "Mirador Group tomonidan ishlab chiqarilgan GOROD - bu poytaxtning nufuzli tumanida joylashgan zamonaviy biznes-klass turar-joy majmuasi.\n" +
-        "TJ hududida keng terassali va balkonli 6, 8 va 10 qavatli turar-joy binolari mavjud. Kvartiralar 46 dan 149 kvadrat metrgacha maydonga ega",
+        "TJ hududida keng terassali va balkonli 6, 8 va 10 qavatli turar-joy binolari mavjud. Kvartiralar 46 dan 200 kvadrat metrgacha maydonga ega",
       advantages: [
         { title: "Planirovkalar", count: "21" },
         { title: "Avtoturargohlar", count: "325" },
@@ -180,6 +181,7 @@ export const content = {
         // { title: "Ход строительства", id: EBlocks.BUILDINGS },
         { title: "Локация", id: EBlocks.LOCATION },
       ],
+      mainPhone: "+998 78 7776666",
       phone: "+998 97 3359999",
       extraPhone: "+998 98 3359999",
       timetable: "Ежедневно с 9:00 до 20:00",
@@ -195,7 +197,7 @@ export const content = {
       description:
         "GOROD от Mirador Group - это современный комплекс апартаментов бизнес-класса расположенный в престижном районе столицы.\n" +
         "На территории ЖК представлены 6, 8 и 10-этажные жилые дома с просторными террасами " +
-        "и балконами. Квартиры имеют площадь от 46 до 149 квадратных метров.",
+        "и балконами. Квартиры имеют площадь от 46 до 200 квадратных метров.",
       advantages: [
         { title: "Планировок", count: "21" },
         { title: "Парковочных мест", count: "325" },
@@ -213,7 +215,7 @@ export const content = {
       {
         title: "БЛАГОУСТРОЕННАЯ ТЕРРИТОРИЯ",
         description:
-          "Во дворах предусмотрены зеленые зоны с ландшафтным дизайном, многофункциональные детские площадки, беседки для отдыха, дорожки для прогулок.",
+          "Во дворах предусмотрены зеленые зоны с ландшафтным дизайном, многофункциональные детские площадки, беседки для отдыха, прогулочные дорожки.",
         image: advantageImg2,
       },
       {
@@ -269,6 +271,7 @@ export const content = {
       address: "Ташкент, Яшнабадский р-н, Мавлоно Риёзий 2",
       shortAddress: "Мавлоно Риёзий 2",
       phone: "+998 97 3359999",
+      mainPhone: "+998 78 7776666",
       extraPhone: "+998 98 3359999",
       mail: "info@jkgorod.uz",
       buttonText: "Записаться на встречу",

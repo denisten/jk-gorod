@@ -21,28 +21,16 @@ export const ContactMobileBlock: React.FC<IProps> = ({ lang, openModal }) => {
         fontSize="1.8rem"
       />
       <div className={styles.row}>
-        <Text text={localContent.address} className={styles.infoText} />
+        <Text text={localContent.address} />
       </div>
       <div className={styles.row}>
-        <Text
-          type="tel"
-          text={localContent.phone}
-          className={styles.infoText}
-        />
+        <Text type="tel" text={localContent.phone} />
       </div>
       <div className={styles.row}>
-        <Text
-          type="tel"
-          text={localContent.extraPhone}
-          className={styles.infoText}
-        />
+        <Text type="tel" text={localContent.extraPhone} />
       </div>
       <div className={styles.row}>
-        <Text
-          type="mail"
-          text={localContent.mail}
-          className={styles.infoText}
-        />
+        <Text type="mail" text={localContent.mail} />
       </div>
       <Button
         text={localContent.buttonText}

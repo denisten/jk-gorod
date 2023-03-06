@@ -36,7 +36,7 @@ export const ChessBlockMobile: FC<IProps> = ({ lang }) => {
           }}
           navigation={true}
           autoplay={{
-            delay: 3000,
+            delay: 10000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Navigation, Pagination]}

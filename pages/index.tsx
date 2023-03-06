@@ -28,6 +28,7 @@ import "swiper/css/navigation";
 import { LocationMobileBlock } from "../blocks/LocationMobileBlock";
 import { FooterBlock } from "../blocks/FooterBlock";
 import { ContactMobileBlock } from "../blocks/ContactMobileBlock";
+import { BuildingStepsBlock } from "../blocks/BuildingStepsBlock";
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -64,6 +65,7 @@ export default function Home() {
         <AdvantagesBlock lang={lang} />
       )}
       <GalleryBlock lang={lang} />
+      {/*<BuildingStepsBlock lang={lang} />*/}
       {isMobile ? (
         <LocationMobileBlock />
       ) : (
