@@ -47,19 +47,28 @@ export const LocationBlock: FC<IProps> = ({ lang, openModal }) => {
             <div className={styles.row}>
               <Text text={localContent.address} className={styles.infoText} />
             </div>
-            <div className={styles.row}>
-              <Text
-                type="tel"
-                text={localContent.phone}
-                className={styles.infoText}
-              />
-            </div>
-            <div className={styles.row}>
-              <Text
-                type="tel"
-                text={localContent.extraPhone}
-                className={styles.infoText}
-              />
+            <div className={styles.content}>
+              <p className={styles.phone}>
+                <Text
+                  type="tel"
+                  text={localContent.mainPhone}
+                  className={styles.infoText}
+                />
+              </p>
+              <p className={styles.phone}>
+                <Text
+                  type="tel"
+                  text={localContent.phone}
+                  className={styles.infoText}
+                />
+              </p>
+              <p className={styles.phone}>
+                <Text
+                  type="tel"
+                  text={localContent.extraPhone}
+                  className={styles.infoText}
+                />
+              </p>
             </div>
             <div className={styles.row}>
               <Text
@@ -69,6 +78,7 @@ export const LocationBlock: FC<IProps> = ({ lang, openModal }) => {
               />
             </div>
             <Button
+              style={{ background: "#394426" }}
               text={localContent.buttonText}
               fontFamily={EFonts.Austin}
               onClick={openModal}

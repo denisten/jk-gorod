@@ -136,6 +136,7 @@ export const content = {
       address: "Toshkent, Yashnobod tumani, Mavlono Riyoziy 2",
       shortAddress: "Mavlono Riyoziy 2",
       phone: "+998 97 3359999",
+      mainPhone: "+998 78 7776666",
       extraPhone: "+998 98 3359999",
       mail: "info@jkgorod.uz",
       buttonText: "Uchrashuvga yoziling",

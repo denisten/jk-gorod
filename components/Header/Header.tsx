@@ -102,12 +102,6 @@ export const Header: FC<IProps> = ({
             className={styles.phone}
             type="tel"
           />
-          <Text text={localContent.phone} className={styles.phone} type="tel" />
-          <Text
-            text={localContent.extraPhone}
-            className={styles.phone}
-            type="tel"
-          />
           <Text text={localContent.timetable} className={styles.infoContent} />
         </div>
         <Image

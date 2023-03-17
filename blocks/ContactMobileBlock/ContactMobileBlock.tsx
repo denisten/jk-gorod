@@ -24,6 +24,9 @@ export const ContactMobileBlock: React.FC<IProps> = ({ lang, openModal }) => {
         <Text text={localContent.address} />
       </div>
       <div className={styles.row}>
+        <Text type="tel" text={localContent.mainPhone} />
+      </div>
+      <div className={styles.row}>
         <Text type="tel" text={localContent.phone} />
       </div>
       <div className={styles.row}>

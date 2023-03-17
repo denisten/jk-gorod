@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import styles from "./index.module.css";
 import cn from "classnames";
 import { Text } from "../Text";
@@ -11,6 +11,7 @@ interface IProps {
   fontFamily: EFonts;
   onClick: () => void;
   title?: boolean;
+  style?: CSSProperties;
 }
 
 export const Button: React.FC<IProps> = ({
@@ -18,12 +19,16 @@ export const Button: React.FC<IProps> = ({
   className,
   textClassName,
   fontFamily,
-  // fontSize,
   onClick,
   title,
+  style,
 }) => {
   return (
-    <div className={cn(className, styles.container)} onClick={onClick}>
+    <div
+      className={cn(className, styles.container)}
+      style={style}
+      onClick={onClick}
+    >
       <Text
         // fontSize={fontSize}
         className={cn(textClassName, styles.text)}

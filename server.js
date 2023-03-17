@@ -2,11 +2,28 @@
 const { createServer } = require("http");
 const { parse } = require("url");
 const next = require("next");
-
+const { Client } = require("pg");
 const dev = process.env.NODE_ENV !== "production";
 const hostname = "localhost";
 const port = 4000;
 // when using middleware `hostname` and `port` must be provided below
+const client = new Client({
+  user: "user",
+  host: "host",
+  database: "database",
+  password: "password",
+});
+client.connect((err) => {
+  if (err) {
+    console.error("connection error", err.stack);
+  } else {
+    console.log("connected");
+  }
+});
+// client.query("SELECT NOW()", (err, res) => {
+//   console.log(err, res, "log from query connection to db");
+//   client.end();
+// });
 const app = next({ dev, hostname, port: dev ? port : null });
 const handle = app.getRequestHandler();
 

@@ -27,8 +27,20 @@
     margin-bottom: 2rem;
 }
 
+.content {
+    margin-bottom: 2rem;
+}
+
 .icon {
     margin-right: 12px;
+}
+
+.phone {
+    margin-bottom: -1rem;
+}
+
+.buttonLink {
+    background: #394426;
 }
 
 .address {
